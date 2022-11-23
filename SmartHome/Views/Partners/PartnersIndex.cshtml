@@ -1,0 +1,99 @@
+﻿@model SmartHome.Models.PartnersViewModel
+<link href="~/css/partners.css" rel="stylesheet" ver />
+
+
+<div class="partners_section1">
+    <div class="partners_sec1_container">
+        <div class="prtnrs_sectn1_text1">BECOME Our Partner</div>
+        <div class="prtnrs_sectn1_text2">Grow Your Security Busines Easy with SmartHome Company</div>
+    </div>
+</div>
+
+<div class="partners_section2">
+    <div class="partners_sec2_container">
+        <div class="prtnrs_sectn2_text">
+            <div class="prtnrs_sectn2_baslik">OUR SECURITY Products</div>
+            <div class="prtnrs_sectn2_aciklama">
+                SmartHome company is one of the world's leading solutions for the home security industry.
+                We offer the perfect opportunity for companies to grow their business as a SmartHome Partner.
+                We guarantee you’ll have a reliable and future-proof partner with a market leading solution.
+                Whether you’re a system integrator, home builder, electrical contractor, architect, or web developer get in touch to
+                find out how you can benefit from a strong collaboration.
+            </div>
+        </div>
+        <div class="prtnrs_sectn2_gorsel">
+            <img class="p_sctn2_gorsel" src="~/img/partners_img.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="partners_section3">
+    <div class="prtnrs_sec3_container">
+        <div class="prtnrs_sctn3_text1">We offer:</div>
+        <div class="prtnrs_sctn3_sunulanlar">
+            @if (Model != null)
+            {
+                <div class="p_s_sunulan">
+                    @foreach (var partersmodel in Model.partners)
+                    {
+                        <div class="p_s_sunulan1"><i class="fa fa-check p_s_check" aria-hidden="true"></i>@partersmodel.Gorev</div>
+                        @*  <div class="p_s_sunulan1"><i class="fa fa-check p_s_check" aria-hidden="true"></i>@partersmodel.Gorev</div>
+                            <div class="p_s_sunulan1"><i class="fa fa-check p_s_check" aria-hidden="true"></i>@partersmodel.Gorev</div>
+                            <div class="p_s_sunulan1"><i class="fa fa-check p_s_check" aria-hidden="true"></i>@partersmodel.Gorev</div>
+                        *@
+                    }
+                </div>
+            }
+            @*
+                <div class="p_s_sunulan">
+                <div class="p_s_sunulan1"><i class="fa fa-check p_s_check" aria-hidden="true"></i>Free technical support</div>
+                <div class="p_s_sunulan1"><i class="fa fa-check p_s_check" aria-hidden="true"></i>Personal contact manager</div>
+                <div class="p_s_sunulan1"><i class="fa fa-check p_s_check" aria-hidden="true"></i>Real margins, fair pricing</div>
+                </div>
+            *@
+        </div>
+    </div>
+</div>
+
+
+
+<div class="partners_section4">
+    <div class="partners_section4_container">
+        <div class="prtnrs_sctn4_resim"><img class="sctn4_resim2" src="~/img/asmrthomecamera.jpg"></div>
+        <div class="prtnrs_sctn4_form">
+            <div class="prtnrs_sctn4_formtext">
+                <div class="prtnrs_sctn4_formbaslik"> BECOME a Partnet Today</div>
+                <div class="prtnrs_sctn4_formaciklama">We’re here to answer any questions you might have about living in a Smart Home. </div>
+                <div class="iletisim"><a class="simdiara" href="tel:1234567890" data-action="call" class="moto-link">Call Now: (123) 456 7890</a></div>
+            </div>
+            <div class="form2">
+                <form action="/Partners/PartnerVeriEklemeIndex" method="post">
+                    <div class="row">
+                        <div class="col-75"> <input type="text" id="fname" name="FirstName" placeholder="First Name*"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-75"> <input type="text" id="lname" name="LastName" placeholder="Last Name*"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-75"><input type="text" id="phone_id" name="Phone" placeholder="Phone*"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-75"><input type="text" id="eml" name="Email" placeholder="Email*"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-75"><input type="text" id="companyname_id" name="CompanyName" placeholder="Company Name*"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-75"><input type="text" id="msg" name="Message" placeholder="Message*"></div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <input type="submit" value="SEND">
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+</div>

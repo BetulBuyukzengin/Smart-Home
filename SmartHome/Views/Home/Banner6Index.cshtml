@@ -1,0 +1,45 @@
+﻿@using SmartHome.Models
+@model List<Banner6>
+
+<div class="banner6">
+    <div class="sol">
+        @foreach (var y in Model)
+        {
+
+            <div class="solbaslik1"></div>
+            <div class="solaciklama">@y.Solaciklama </div>
+            <div class="callnow">
+                <a href="tel:1234567890" data-action="call" class="moto-link">Call Now: @y.Callnow</a>
+            </div>
+            <div class="form1">
+                <form action="home.html">
+                    <div class="row">
+                        <div class="col-75">
+                            <input type="text" id="yname" name="yourname" placeholder= @y.Yname>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-75">
+                            <input type="text" id="eml" name="email" placeholder=@y.Eml>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-75">
+                            <input type="text" id="msg" name="message" placeholder=@y.Msg>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <input type="submit" value=@y.Submit>
+                    </div>
+                </form>
+            </div>
+        }
+    </div>
+    <div class="sag">
+        <img id="sagcamera" src="img/camera.jpg " alt="">
+
+    </div>
+</div>

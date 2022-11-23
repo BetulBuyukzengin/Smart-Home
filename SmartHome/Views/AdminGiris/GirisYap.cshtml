@@ -1,0 +1,64 @@
+﻿@using SmartHome.Models
+
+@{
+    ViewData["Title"] = "GirisYap";
+    Layout = null;
+}
+<link href="~/css/login.css" rel="stylesheet" />
+<script src="~/js/site.js"></script>
+
+<div class="adminlogin">
+    <div class="container-login">
+        <div class="oturumacma">
+            <div class="login js-tilt" data-tilt>
+                <img src="~/img/img-01.png" alt="IMG">
+            </div>
+            @*actionu, methodu ve  name de düzenlemeler yapıldı. Name modeldekilerle aynı olmalı*@
+            @*<form action="/AdminGiris/AdminDashboard" class="login-form validate-form" method="post">   bu mu alttaki m*@
+
+            <form action="/AdminGiris/GirisYap" class="login-form validate-form" method="post">
+                <span class="login-form-title">
+                    Admin Login
+                </span>
+
+                <div class="wrap-input validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                    <input class="input" type="text" name="KullaniciAdi" placeholder="Kullanıcı Adı" required="">
+                    <span class="focus-input"></span>
+                    <span class="symbol-input">
+                        <i class="fa-solid fa-user" aria-hidden="true"></i>
+                    </span>
+                </div>
+
+                <div class="wrap-input validate-input" data-validate="Password is required">
+                    <input class="input" type="password" name="KullaniciSifre" placeholder="Şifre" required="">
+                    <span class="focus-input"></span>
+                    <span class="symbol-input">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                    </span>
+                </div>
+
+                <div class="container-login-form-btn">
+                    <button class="login100-form-btn">
+                        Login
+                    </button>
+                </div>
+
+                <div class="text-center p-t-12">
+                    <span class="txtforgot">
+                        Forgot
+                    </span>
+                    <a class="txtuserbilgi" href="#">
+                        Username / Password?
+                    </a>
+                </div>
+
+                <div class="text-center p-t-136">
+                    <a class="txtuserbilgi" href="#">
+                        Create your Account
+                        <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

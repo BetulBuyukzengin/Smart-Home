@@ -1,0 +1,119 @@
+﻿@model List<SupportCenter>
+<link href="~/css/supportcenter.css" rel="stylesheet" ver />
+<link href="~/css/menu_footer.css" rel="stylesheet" ver />
+
+
+@{
+    Layout = "_Layout";
+}
+
+
+<div class="supportcenter_sec1">
+    <div class="supportcenter_text1">SUPPORT Center</div>
+</div>
+
+
+<div class="supportcenter_sec2">
+    <div class="supportcenter_baslik2">HOW WE CAN Help You </div>
+    <div class="supportcenter_cards">
+        <div class="supportcenter_card">
+            <div class="supportcenter_card_baslik"><i class="fa fa-file" aria-hidden="true"></i> Documentations</div>
+            <div class="supportcenter_card_acikl">Fast and easy access to documentation for SmartHome.</div>
+            <div class="supportcenter_card_down_watch_more">DOWNLOAD</div>
+
+        </div>
+        <div class="supportcenter_card">
+            <div class="supportcenter_card_baslik"><i class="fa fa-file" aria-hidden="true"></i>Video tutorials</div>
+            <div class="supportcenter_card_acikl">One playlist for all tutorials and quick start videos.</div>
+            <div class="supportcenter_card_down_watch_more">WATCH VIDEO</div>
+        </div>
+        <div class="supportcenter_card">
+            <div class="supportcenter_card_baslik"><i class="fa fa-file" aria-hidden="true"></i>Q&A</div>
+            <div class="supportcenter_card_acikl">Solutions for the most frequently asked questions.</div>
+            <div class="supportcenter_card_down_watch_more">MORE INFO</div>
+        </div>
+    </div>
+</div>
+
+<div class="supportcenter_sec3">
+    <div class="Eu_SpprtCenter">
+        <div class="EuAmer_SpprtCenterbaslik">Europe Support Center</div>
+        <div class="Eu_SpprtCentersolsag">
+            <div class="Eu_SpprtCentersol">
+                @if (Model != null)
+                {
+                    foreach (var supportCenter in Model)
+                    {
+                        <div class="Eu_SpprtCentersolsaat">
+                            <i class="fa fa-calendar supportcentericons" aria-hidden="true"></i>
+                            @supportCenter.Saat
+                        </div>
+                        <div class="Eu_SpprtCentersolmail renk_crsor">
+                            <i class="fa fa-envelope supportcentericons" aria-hidden="true"></i>
+                            @supportCenter.Eposta
+                        </div>
+                    }
+
+                }
+
+
+            </div>
+            <div class="Eu_SpprtCentersag">
+                @if (Model != null)
+                {
+                    foreach (var supportCenter in Model)
+                    {
+                        <div class="Ea_SpprtCenterstel1 renk_crsor"><i class="fa-solid fa-phone supportcentericons"></i>UK:@supportCenter.TelNo</div>
+                        <div class="Ea_SpprtCenterstel2 renk_crsor">FR:@supportCenter.TelNo</div>
+                    }
+                }
+                else
+                {
+                    <div class="Ea_SpprtCenterstel1 renk_crsor"><i class="fa-solid fa-phone supportcentericons"></i>Değerler yok</div>
+                    <div class="Ea_SpprtCenterstel2 renk_crsor">Değerler yok</div>
+
+                }
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="EA_ayirici">
+        <img src="img/spprtcent_sec3.jpg" alt="">
+    </div>
+    <div class="Amer_SpprtCenter">
+        <div class="EuAmer_SpprtCenterbaslik">American Support Center</div>
+        <div class="Amer_SpprtCentersolsag">
+            <div class="Amer_SpprtCentersol">
+                @if (Model != null)
+                {
+                    foreach (var supportCenter in Model)
+                    {
+                        <div class="Amer_SpprtCentersolsaat"><i class="fa fa-calendar supportcentericons" aria-hidden="true"></i>@supportCenter.Saat</div>
+                        <div class="Amer_SpprtCentersolmail renk_crsor">
+                            <i class="fa fa-envelope supportcentericons" aria-hidden="true"></i>
+                            @supportCenter.Eposta
+                        </div>
+                    }
+
+
+                }
+
+            </div>
+            <div class="Amer_SpprtCentersag">
+                @if (Model != null)
+                {
+                    foreach (var supportCenter in Model)
+                    {
+                        <div class="Amer_SpprtCenterstel1 renk_crsor"><i class="fa-solid fa-phone supportcentericons"></i>UK:@supportCenter.TelNo</div>
+                        <div class="Amer_SpprtCenterstel2 renk_crsor">FR:@supportCenter.TelNo</div>
+
+                    }
+                }
+
+            </div>
+        </div>
+    </div>
+
+</div>

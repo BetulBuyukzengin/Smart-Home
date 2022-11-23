@@ -1,0 +1,68 @@
+﻿@model List<Services>
+<link href="~/css/services.css" rel="stylesheet" ver />
+<link href="~/css/menu_footer.css" rel="stylesheet" ver />
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+
+<div class="servicessection1">
+    <div class="serv_baslik "> SERVICES Catalog </div>
+    <div class="serv_text ">We offer high-quality alarm installation, design home security project and 24/7 custom support</div>
+</div>
+
+<div class="servicessection2">
+    <div class="servsec2baslik">SERVICES Catalog</div>
+    <div class="servsec2text">Our home security services ensure that you feel safe and secure in your home.</div>
+    <div class="servsec2kart">
+
+        @if (Model != null)
+        {
+            <div class="serv2kart_1">
+                @foreach (var f in Model)
+                {
+                    <div class="kart_a"><i class="fa fa-check servccheck" aria-hidden="true"></i>@f.Text</div>
+                }
+            </div>
+        }
+        else
+        {
+            <div class="serv2kart_1">
+                <div class="kart_a"><i class="fa fa-check servccheck" aria-hidden="true"></i>Bos</div>
+            </div>
+        }
+    </div>
+</div>
+
+<div class="servicessection3">
+    <div class="ser_sec3kart1">
+        <div class="standartkart">
+            <div class="standart sec3_kart_text">Standart</div>
+            <div class="aylikdolar sec3_kart_text">$98/mounth</div>
+        </div>
+        <div class="serc3kartaciklama sec3_kart_text">
+            Full planning and configuration assistance. Discreet installation.24-hour alarm monitoring.
+            Product consultation.24/7 customer support
+        </div>
+        <div class="order_now sec3_kart_text"> ORDER NOW</div>
+
+    </div>
+
+
+    <div class="ser_sec3kart2">
+        <div class="premiumkart">
+            <div class="premium sec3_kart_text">Premium</div>
+            <div class="aylikdolar sec3_kart_text">$176/mounth</div>
+        </div>
+        <div class="serc3kartaciklama sec3_kart_text">
+            Full planning and configuration assistance.Discreet installation.24-hour alarm monitoring.
+
+            Annual maintenance checks.   Full cover maintenance. Product consultation & training courses.24/7 customer support
+        </div>
+        <div class="order_now sec3_kart_text">ORDER NOW</div>
+
+    </div>
+</div>

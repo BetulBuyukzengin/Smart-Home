@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Live preview for Smart Home MotoCMS Website Template #84608</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="" href="security.css">
+    <link href="https: //fonts.googleapis.com/css2? family= Roboto+Serif:opsz@8..144 & display=swap" rel="stylesheet">
+    <link href="https: //fonts.googleapis.com/css2? family= Coda & display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="header">
+        <div class="container">
+            <div class="baslik">
+                <div class="active">
+                    <a href="https://www.templatemonster.com/moto-cms-3-templates/smart-home-moto-cms-3-template-84608.html?_gl=1*1sma72x*_ga*MTA1Mzk4NjM5OC4xNjUwMDE5MTI1*_ga_FTPYEGT5LY*MTY1MDAyMjUyMi4yLjEuMTY1MDAyMzgyNS41OA..&_ga=2.52315306.2084685073.1650019125-1053986398.1650019125">
+                        <i class="fa-solid fa-caret-left"></i> Smart Home Moto CMS 3 Template
+                    </a>
+                </div>
+            </div>
+            <div class="icons">
+
+                <div class="active">
+                    <a href="#"><i class="fa-solid fa-mobile"></i></a>
+                    <a href="#"><i class="fa-solid fa-tablet"></i></a>
+                    <a href="#"><i class="fa-solid fa-display"></i></a>
+                </div>
+            </div>
+            <div class="button">
+                <button>
+                    <a href="#"><i class="fa-solid fa-cart-shopping">Add to Cart</i></a>
+                </button>
+            </div>
+            <div class="sembol">
+                <div class="active "><a href="#"><i class="fa-solid fa-cart-shopping"></i></a> </div>
+                <button>
+                    <a href="#"><i class="fa-solid fa-angles-up"></i></a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <section class="ayirici"> </section>
+
+    <div class="menu">
+        <!--Mobil uyumlu olmasi icin-->
+        <input type="checkbox" id="mobil">
+        <label for="mobil" class="mobil">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <div class="menubaslik">
+            <div class="menubaslikicon"><img src="img/wifi.jpg"></div>
+            <div class="mbaslik"> SmartHome</div>
+        </div>
+        <div class="menuler">
+            <div class="Home">
+                Home
+                <div class="homealtinda">
+                    <div class="Security">Security</div>
+                    <div class="SHome">Smart Home</div>
+                </div>
+            </div>
+            <div class="Services">Services</div>
+            <div class="Store">
+                Store
+                <div class="storealti">
+                    <div class="Singlep">Single Product</div>
+                </div>
+            </div>
+            <div class="Support ">Support Center</div>
+            <div class="Partners">Partners</div>
+            <div class="About ">About Us</div>
+            <div class="Blog">Blog</div>
+            <div class="Concact">Concact</div>
+        </div>
+    </div>
+    @RenderBody()
+    <div class="footer">
+
+        <div class="footersol">
+            <div class="fsoltext">
+                <div class="ftext1-1"> ©2019 All Rights Reserved Terms of </div>
+                <div class="ftext1-2"> Use and Privacy Policy</div>
+            </div>
+        </div>
+        <div class="footerorta">
+            <img class="footerimg" src="img/wifi.jpg" alt="">
+            <div class="ftext2">SMART HOME</div>
+        </div>
+
+
+        <div class="footerson">
+            <div class="footericons">
+                <div class="facebook">
+                    <i class="logo-hover fa-brands fa-facebook-f"
+                       style="padding: 24px; border-radius: 60px;background-color: white; margin-right: 10px;"> </i>
+                </div>
+                <div class="twitter">
+                    <i class="logo-hover fa-brands fa-twitter"
+                       style="padding: 24px; border-radius: 60px;background-color: white; margin-right: 10px;"></i>
+                </div>
+                <div class="pinterest">
+                    <i class="logo-hover fa-brands fa-pinterest-p"
+                       style="padding: 24px; border-radius: 60px;background-color: white; margin-right: 10px;"></i>
+                </div>
+                <div class="linkedin">
+                    <i class="logo-hover fa-brands fa-linkedin-in"
+                       style="padding: 24px; border-radius: 60px;background-color: white; margin-right: 10px;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+﻿@using SmartHome.Models
+@model List<Swiper>
+
+<section class="banner0">
+    <div class="container">
+        @foreach (var z in Model)
+        {
+        <div class="swiper  mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+
+                    <img id="Resim" src="img/p1.jpg" alt="">
+                    <div class="ilktext">
+                        <div class="ceneteredtext1">
+                            <div class="centered1"> @z.Centered1</div>
+                            <div class="centered2"> @z.Centered2 </div>
+                            <!-- <button id="btn"><a href="#"></a></i> LEARN MORE <i
+                                    class="fa-solid fa-angles-right"></i>
+                                </button>  -->
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img id="Resim" src="img/p2.jpg" alt="">
+                    <div class="ceneteredtext1">
+                        <div class="centered1">@z.Centered1</div>
+                        <div class="centered3">@z.Centered3</div>
+                        <!-- <button id="btnlearn"><a href="#"></a> LEARN MORE <i
+                                class="fa-solid fa-angles-right"></i></button>-->
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img id="Resim" src="img/p3.jpg" alt="">
+                    <div class="ceneteredtext1">
+                        <div class="centered1">@z.Centered1</div>
+                        <div class="centered2">@z.Centered2</div>
+                        <!-- <button id="btn"><a href="#"></a> LEARN MORE <i
+                                class="fa-solid fa-angles-right"></i></button>-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+        }
+    </div>
+</section>

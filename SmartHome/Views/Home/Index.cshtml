@@ -1,0 +1,406 @@
+﻿@model SmartHome.Models.Anasayfa
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+<link rel="stylesheet" href="~/css/style.css">
+
+<style>
+    /*slider*/
+    /* alttaki dairelere basılınca renk*/
+    .prev:hover, .next:hover {
+        background-color: #02d6fc;
+    }
+
+
+    /* Fading animation */
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @@keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+</style>
+
+
+<section class="banner0">
+    <div class="container">
+        @foreach (var z in Model.s)
+        {
+            <div class="swiper  mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+
+                        <img id="Resim" src="~/img/p1.jpg" alt="">
+                        <div class="ilktext">
+                            <div class="ceneteredtext1">
+                                <div class="centered1"> @z.Centered1</div>
+                                <div class="centered2"> @z.Centered2 </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img id="Resim" src="~/img/p2.jpg" alt="">
+                        <div class="ceneteredtext1">
+                            <div class="centered1">@z.Centered1</div>
+                            <div class="centered3">@z.Centered3</div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img id="Resim" src="~/img/p3.jpg" alt="">
+                        <div class="ceneteredtext1">
+                            <div class="centered1">@z.Centered1</div>
+                            <div class="centered2">@z.Centered2</div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        }
+
+    </div>
+</section>
+<section class="banner1">
+    <div class="container">
+        <div class="kart1">
+            <div class="baslik1">
+                <h1>MAKE YOUR HOME SMARTER & SAFE </h1>
+            </div>
+            <div class="baslik2">
+                <h2>A SMART SOLUTION for Your Protection</h2>
+            </div>
+            <div class=" aciklama1">
+                You have the opportunity to watch over your home from anywhere and at any time
+                of day or night. A smart house has excellent video quality, live streaming and two-way audio.
+            </div>
+            <div class="kart1-2">
+                <div class="picture1">
+                    <img src="img/icon1.jpg">
+                    <img src="img/icon2.jpg">
+                    <img src="img/icon3.jpg">
+                </div>
+                <div class="aciklamalar">
+                    <div class="kbaslik1 font-size-21 ">Sensor</div>
+                    <div class="sensoraciklama cihazacik">
+                        The smart sensor provides the foundation for automating
+                        key smart
+                        home functions such as lighting, alarms, music, heating and more.
+                    </div>
+                    <div class="kbaslik2 font-size-21">SmartAlerts</div>
+                    <div class="alertsaciklama cihazacik">
+                        Alerts system will send you the notification to your
+                        email, text
+                        message of your own callback if the anomaly is detected.
+                    </div>
+                    <div class="kbaslik3 font-size-21">Notification & Control</div>
+                    <div class="controlaciklama cihazacik">
+                        Control solution gives you an opportunity to customizable
+                        home
+                        security and monitoring, giving you peace of mind and keeping your home safe and sound.
+                    </div>
+                </div>
+            </div>
+            <div class="kart1-3">
+                <button> <a href="/A_smarthome/Index">BROWSE ALL DEVICES</a></button>
+            </div>
+
+        </div>
+        <div class="kart2">
+            <div class="bannerimage"><img src="img/bn1.jpg" alt=""></div>
+        </div>
+
+    </div>
+</section>
+
+<section class="banner2">
+    <div class="container">
+
+
+        @foreach (var x in Model.b2)
+        {
+
+            <div class="bn2text">@x.Bn2text </div>
+
+            <div class="ust">
+                <div class="card-a">
+                    <div class="a1 tumicon">
+                        <img src="img/m1.jpg" class="card-img-top" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">@x.CardText1</p>
+                    </div>
+                </div>
+
+
+                <div class="card-a">
+                    <div class="b1 tumicon">
+                        <img src="img/m2.jpg" class="card-img-top" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">@x.CardText2</p>
+                    </div>
+                </div>
+
+                <div class="card-a">
+                    <div class="c1 tumicon">
+                        <img src="img/m3.jpg" class="card-img-top" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">@x.CardText3 </p>
+                    </div>
+                </div>
+
+                <div class="card-a">
+                    <div class="d1 tumicon">
+                        <img src="img/m4.jpg" class="card-img-top" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">@x.CardText4</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="alt">
+
+                <div class="card-a">
+                    <div class="e1 tumicon">
+                        <img src="img/m5.jpg" class="card-img-top" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">@x.CardText5</p>
+                    </div>
+                </div>
+
+
+                <div class="card-a">
+                    <div class="f1 tumicon">
+                        <img src="img/m6.jpg" class="card-img-top" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">@x.CardText6</p>
+                    </div>
+                </div>
+                <div class="card-a">
+                    <div class="g1 tumicon">
+                        <img src="img/m7.jpg" class="card-img-top" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">@x.CardText7</p>
+                    </div>
+                </div>
+                <div class="card-a">
+                    <div class="h1 tumicon">
+                        <img src="img/m8.jpg" class="card-img-top" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">@x.CardText8</p>
+                    </div>
+                </div>
+
+            </div>
+        }
+
+
+
+
+
+    </div>
+
+</section>
+
+<section class="banner3">
+    <div class="container">
+        <div class="gorsel">
+            <img class="gorsel1" src="img/p4.jpg" alt="">
+        </div>
+        <div class="text">
+            <div class="aciklama">WHO WE ARE </div>
+            <div class="baslik">SMARTHOME COMPANY </div>
+            <div class="textt">
+                The place where you can do anything you want. The home that warms the floor before
+                you get out of bed and puts your favorite song on. We offer premium home automation systems with
+                personalization features.
+            </div>
+            <button id="bn3btn"> MORE ABOUT US</button>
+
+
+        </div>
+    </div>
+</section>
+
+<div class=" banner4">
+    <img id="bn4p6" src="img/p6.jpg" alt="">
+    <div style="position: absolute;display: grid;grid-auto-columns: auto;justify-items: center;">
+        <div class="bn4text" style="align-items: center; margin: 0 0 0 27%; display: grid; grid-auto-columns: auto; justify-items: center;">
+            <div class="ticket1">
+                SMART HOME SECURITY LIKE NEVER BEFORE
+            </div>
+            <div class="ticket2">Learn How it Works </div>
+            <!-- <button><div class="ticketbtn">WATCH THE VIDEO</div></button> -->
+            <button id="ticketbtn"><i class="fa-solid fa-circle-play"></i><a href="https://youtu.be/Scxs7L0vhZ4"> WATCH THE VIDEO</a></button>
+        </div>
+    </div>
+</div>
+
+
+<div class="yorum">
+    <div class="etiket">@*@n.Etiket*@TESTIMONIALS </div>
+    <div class="etiketbaslik">@*@n.Etiketbaslik*@WHAT PEOPLE SAY ABOUT US </div>
+
+    <div class="yorumcard">
+        @foreach (var n in Model.y)
+        {
+            <div class="card-b1">
+                <span class="fa homecardfa"></span>
+                <div class="card-text">
+                    <p class="card-text1">@n.Cardtext1</p>
+                    <p class="sahibi">@n.Sahibi1 </p>
+                </div>
+            </div>
+
+
+           @* <div class="card-b1">
+                <span class="fa homecardfa"></span>
+                <p class="card-text2"></p>@n.Cardtext2<p class="sahibi">@n.Sahibi2 </p>
+
+            </div>*@
+
+        }
+
+    </div>
+
+</div>
+
+<div class="banner5">
+    <!-- <img id="p6" src="img/bg.jpg" alt="">
+    <div style="position: absolute;">-->
+    <div class="bn5resim">
+        <img id="bn5resimid" src="img/a.jpg " alt="">
+
+    </div>
+    <div class="bn5text">
+        <div class="bn5baslik1">NEW MONITORING APP </div>
+        <div class="bn5baslik2">WHAT PEOPLE SAY ABOUT US </div>
+        <div class="bn5aciklama">
+            <div class="bn5aciklama1">CheckAgain App. </div>
+            <div class="bn5aciklama2">
+                Manage everything and everywhere. You can control everything in your house
+                with our application.
+                Use your phone to monitor your home from any part of the globe.
+            </div>
+        </div>
+        <button id="bn5btn">DOWNLOAD NOW</button>
+    </div>
+
+
+
+</div>
+
+<div class="banner6">
+    <div class="sol">
+        @foreach (var y in Model.b6)
+        {
+
+            <div class="solbaslik1">@y.Solbaslik1</div>
+            <div class="solaciklama">@y.Solaciklama </div>
+            <div class="callnow" style="cursor:pointer">
+                <a href="tel:1234567890" data-action="call" class="moto-link">Call Now: @y.Callnow</a>
+            </div>
+
+        }
+        <div class="form1">
+            @*methodu post olan kullanicilar icindeki indexe git*@
+            <form action="/Kullanicilar/Index" method="post">
+                <div class="row">
+                    <div class="col-75">
+                        @*Ad,Posta,Mesaj kullanici modelindeki isimlerle ayni olmali*@
+                        <input type="text" id="yname" name="Ad" placeholder="Your Name*" required="">
+                        @*<input asp-for="k" id="yname" name="Ad" placeholder="Your Name*">
+                        <span asp-validation-for="k"></span>*@
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-75">
+                        <input type="text" id="eml" name="Posta" placeholder="Email*" required="">
+                        @*<span asp-validation-for="k"></span>
+                        <input asp-for="k" id="eml" name="Posta" placeholder="Email*">*@
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-75">
+                        @*<input type="text" id="msg" name="Mesaj" placeholder="Message*" required="">*@
+                        <input asp-for="k" id="msg" name="Mesaj" placeholder="Message*" required="">
+                        <span asp-validation-for="k"></span>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <input type="submit" style="cursor:pointer">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="sag">
+        <img id="sagcamera" src="img/camera.jpg " alt="">
+
+    </div>
+</div>
+
+
+
+<script>
+
+
+
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+
+        //$(".swiper-slide")
+        let i;
+        let slides = $(".swiper-slide");//document.getElementsByClassName("swiper-slide");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+
+        slides[slideIndex - 1].style.display = "flex";
+
+        setTimeout(showSlides, 2000); // Change image every 2 seconds fonk çalışma suresi
+    }
+                                //var swiper = new Swiper(".mySwiper", {
+                                //    spaceBetween: 30,
+                                //    effect: "fade",
+                                //    navigation: {
+                                //        nextEl: ".swiper-button-next",
+                                //        prevEl: ".swiper-button-prev",
+                                //    },
+                                //    pagination: {
+                                //        el: ".swiper-pagination",
+                                //        clickable: true,
+                                //    },
+                                //});
+</script>

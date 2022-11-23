@@ -1,0 +1,138 @@
+﻿
+@model List<Hq_technology>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<link href="~/css/security.css" rel="stylesheet" ver />
+<link href="~/css/menu_footer.css" rel="stylesheet" ver />
+
+
+
+
+<div class="security">
+    <div class="text_security">
+        <div class="sec_baslik"> SMART HOME Security </div>
+        <div class="sec_aciklama"> The Best Product for Your Safety  </div>
+    </div>
+</div>
+
+<div class="sec_product">
+    <!-- <div class="containersecurity"> -->
+    <img class="productimg" src="~/img/securitycamera.jpg">
+    <div class="sec_paragraf">
+        <div class="par_baslik">OUR SECURITY Products</div>
+        <div class="par_acik">
+            <div class="par_acik1">Reliable smart home security also requires reliable products. We offer a range of products that can identify different potential dangers and immediately alert you to these. We can take care of a myriad of security requirements with products that can perform multiple functions. You can realize smart self-monitored security features with our Motion Sensor and Door & Window Contact</div>
+            <div class="par_acik2">Security hardware includes alarm systems, doors, security camera systems, locks and motion detectors. There are individual devices available that let you monitor your home from anywhere by using your phone.</div>
+        </div>
+    </div>
+</div>
+
+<div class="hq_technology">
+    <div class="tech_baslik">
+        <div class="High-QTechn">High-Quality Technology</div>
+        <button class="VIEWP_btn">VIEW ALL PRODUCTS</button>
+    </div>
+    <div class="tech_kategori">
+
+        <div class="kategori_list">
+            @if (Model != null )
+            {
+                @foreach (var techtablo in Model)
+                {
+                    <div class="Motion Detector marg2_5 secsensorstyle">
+                        <img class="kategoris mar_3" src="~/@techtablo.Resim">
+                        <div class="MotionDetector mtop_2">@techtablo.Name</div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="Motion Detector marg2_5 secsensorstyle">
+                    @*<img class="kategoris mar_3" src="~/img/harektsens.jpg">*@
+                    <div class="MotionDetector mtop_2">kateori yok</div>
+                </div>
+            }
+
+
+        </div>
+
+
+
+        <div class="imagnext">
+            <div class="tcategorislideshow">
+
+                <div class="mySlides fade">
+                    <img src="~/img/slidev.jpg" style="width:100%">
+                    <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="~/img/slidkame.jpg" style="width:100%">
+                    <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="~/img/slidkam2.jpg" style="width:100%">
+                    <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="~/img/slidzil.jpg" style="width:100%">
+                    <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="~/img/slidpenc.jpg" style="width:100%">
+                    <div class="text"></div>
+                </div>
+            </div>
+
+
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="helpsonsection">
+    <div class="containerhelpsection">
+        <div class="helptanitim">NEED HELP? CONTACT US ANYTIME, We are Always Ready to Help You</div>
+        <div class="helpbtn">CONTACT US</div>
+    </div>
+
+</div>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+
+</script>
+
+

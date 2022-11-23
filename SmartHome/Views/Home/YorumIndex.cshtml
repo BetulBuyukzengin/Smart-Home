@@ -1,0 +1,35 @@
+﻿@using SmartHome.Models
+@model List<Yorum>
+
+@foreach (var n in Model)
+{
+
+<div class="yorum">
+
+    <div class="etiket">@n.Etiket </div>
+    <div class="etiketbaslik">@n.Etiketbaslik </div>
+
+    <div class="yorumcard">
+
+        <div class="card-b1">
+            <span class="fa"></span>
+            <div class="card-text">
+                <p class="card-text1">@n.Cardtext1</p>
+                <p class="sahibi">@n.Sahibi1 </p>
+            </div>
+        </div>
+
+
+
+        <div class="card-b1">
+            <span class="fa"></span>
+            <p class="card-text2">@n.Cardtext2<p class="sahibi">@n.Sahibi2 </p>
+            </p>
+        </div>
+
+
+    </div>
+
+</div>
+
+}

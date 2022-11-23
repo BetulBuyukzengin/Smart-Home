@@ -1,0 +1,60 @@
+﻿@using SmartHome.Models
+
+
+
+<div class="asmarthomecards">
+    @if (Model != null)
+    {
+        @foreach (var m in Model)
+        {
+            <div class="sutuncards1">
+                <div class="sutunilkresim sutunresim_w_h ">
+
+                    <div class="textsutuncard">
+
+                        <div class="sutuncardbaslik">@m.Baslik</div>
+                        <div class="sutuncardaciklama">@m.Text</div>
+                        <button class="sutuncardbtn">LEARN MORE</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+        }
+    }
+    else
+    {
+        <div class="textsutuncard">
+
+            <div class="sutuncardbaslik">HOME SECURITY SYSTEM</div>
+            <div class="sutuncardaciklama">Tanımlanmadı</div>
+            <button class="sutuncardbtn">LEARN MORE</button>
+        </div>
+    }
+
+    @*  <div class="sutunikinciresim sutunresim_w_h">
+    <div class="textsutuncard">
+    <div class="sutuncardbaslik">CONTROL LIGHTING</div>
+    <div class="sutuncardaciklama">As you know, the lighting control system is a smart network-based lighting control solution that ensures communication between different system inputs and outputs related to lighting control with the use of one or more central computing devices.</div>
+    <button class="sutuncardbtn">LEARN MORE</button>
+    </div>
+    </div>*@
+
+    @* <div class="sutuncards2">
+    <div class="sutunucuncuresim sutunresim_w_h">
+    <div class="textsutuncard">
+    <div class="sutuncardbaslik">CLIMAT CONTROL</div>
+    <div class="sutuncardaciklama">Everybody loves a comfortable life, and thermal comfort is one of its basic aspects. Having control over the elements cannot be underestimated, and being satisfied with your thermal environment is very important for those who value their wellbeing.</div>
+    <button class="sutuncardbtn">LEARN MORE</button>
+    </div>
+    </div>
+    <div class="sutundorduncuresim sutunresim_w_h">
+    <div class="textsutuncard">
+    <div class="sutuncardbaslik">ENERGY SAVING SYSTEM</div>
+    <div class="sutuncardaciklama">To make your home eco-friendly, use green energy. It is sometimes called renewable energy due to its origin: natural sources like wind, sunlight and water. Thankfully, day by day, eco-energy becomes more popular and cost-effective around the world.</div>
+    <button class="sutuncardbtn">LEARN MORE</button>
+    </div>
+    </div>
+    </div>*@
+</div>

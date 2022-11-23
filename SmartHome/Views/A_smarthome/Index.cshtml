@@ -1,0 +1,171 @@
+﻿@model List<A_smarthome>
+@*@model SmartHome.Models.SmarthomeViewModel*@
+<link href="~/css/asmarthome.css" rel="stylesheet" ver />
+<link href="~/css/menu_footer.css" rel="stylesheet" ver />
+
+
+<div class="security">
+    <div class="sec_baslik"> SMART HOME SOLUTIONS </div>
+</div>
+
+
+<div class="asmarthomecards">
+    <div class="sutuncards1">
+        @if (Model != null)
+        {
+            foreach (var m in Model)
+            {
+
+                if (m.Baslik == "HOME SECURITY SYSTEM")
+                {
+                    <div style="background-image: url(@m.Image)" class="sutunilkresim sutunresim_w_h ">
+
+                        <div class="textsutuncard">
+
+                            <div class="sutuncardbaslik">@m.Baslik</div>
+                            <div class="sutuncardaciklama">@m.Text</div>
+                            <button class="sutuncardbtn">LEARN MORE</button>
+                        </div>
+
+                    </div>
+                }
+
+                if (m.Baslik == "CONTROL LIGHTING")
+                {
+                    <div style="background-image:url(@m.Image)" class="sutunilkresim sutunresim_w_h ">
+
+                        <div class="textsutuncard">
+
+                            <div class="sutuncardbaslik">@m.Baslik</div>
+                            <div class="sutuncardaciklama">@m.Text</div>
+                            <button class="sutuncardbtn">LEARN MORE</button>
+                        </div>
+
+                    </div>
+                }
+
+            }
+        }
+         else
+        {
+            <div class="textsutuncard">
+
+                <div class="sutuncardbaslik">Tanımlanmadı</div>
+                <div class="sutuncardaciklama">Tanımlanmadı</div>
+                <button class="sutuncardbtn">LEARN MORE</button>
+            </div>
+        }
+    </div>
+    <div class="sutuncards2">
+        @if (Model != null)
+        {
+            foreach (var m in Model)
+            {
+                if (m.Baslik == "CLIMAT CONTROL")
+                {
+                    <div style="background-image: url(@m.Image)" class="sutunilkresim sutunresim_w_h ">
+
+                        <div class="textsutuncard">
+
+                            <div class="sutuncardbaslik">@m.Baslik</div>
+                            <div class="sutuncardaciklama">@m.Text</div>
+                            <button class="sutuncardbtn">LEARN MORE</button>
+                        </div>
+
+                    </div>
+                }
+
+                if (m.Baslik == "ENERGY SAVING SYSTEM")
+                {
+                    <div style="background-image: url(@m.Image)" class="sutunilkresim sutunresim_w_h ">
+
+                        <div class="textsutuncard">
+
+                            <div class="sutuncardbaslik">@m.Baslik</div>
+                            <div class="sutuncardaciklama">@m.Text</div>
+                            <button class="sutuncardbtn">LEARN MORE</button>
+                        </div>
+
+                    </div>
+                }
+            }
+        }
+        else
+        {
+            <div class="textsutuncard">
+
+                <div class="sutuncardbaslik">Tanımlanmadı</div>
+                <div class="sutuncardaciklama">Tanımlanmadı</div>
+                <button class="sutuncardbtn">LEARN MORE</button>
+            </div>
+        }
+
+        @* <div class="sutunikinciresim sutunresim_w_h">
+        <div class="textsutuncard">
+        <div class="sutuncardbaslik">CONTROL LIGHTING</div>
+        <div class="sutuncardaciklama">As you know, the lighting control system is a smart network-based lighting control solution that ensures communication between different system inputs and outputs related to lighting control with the use of one or more central computing devices.</div>
+        <button class="sutuncardbtn">LEARN MORE</button>
+        </div>
+        </div>*@
+
+        @* <div class="sutuncards2">
+        <div class="sutunucuncuresim sutunresim_w_h">
+        <div class="textsutuncard">
+        <div class="sutuncardbaslik">CLIMAT CONTROL</div>
+        <div class="sutuncardaciklama">Everybody loves a comfortable life, and thermal comfort is one of its basic aspects. Having control over the elements cannot be underestimated, and being satisfied with your thermal environment is very important for those who value their wellbeing.</div>
+        <button class="sutuncardbtn">LEARN MORE</button>
+        </div>
+        </div>*@
+        @*   <div class="sutundorduncuresim sutunresim_w_h">
+        <div class="textsutuncard">
+        <div class="sutuncardbaslik">ENERGY SAVING SYSTEM</div>
+        <div class="sutuncardaciklama">To make your home eco-friendly, use green energy. It is sometimes called renewable energy due to its origin: natural sources like wind, sunlight and water. Thankfully, day by day, eco-energy becomes more popular and cost-effective around the world.</div>
+        <button class="sutuncardbtn">LEARN MORE</button>
+        </div>
+        </div>
+        </div>*@
+    </div>
+    </div>
+    
+
+    <div class="asmarthomeform">
+        <div class="sol">
+            <img id="solcamera" src="/img/asmrthomecamera.jpg " alt="">
+        </div>
+        <div class="sag">
+            <div class="sagbaslik1">CREATE YOUR PERSONAL Smart Home Project</div>
+            <div class="sagaciklama">
+                We re here to answer any questions you might have about living in a Smart Home.
+            </div>
+            <div class="callnow">
+                <a class="simdiara" href="tel:1234567890" data-action="call" class="moto-link">Call Now: (123) 456 7890</a>
+            </div>
+            <div class="form1">
+                <form action="/A_smarthome/Index" method="post">
+                    <div class="row">
+                        <div class="col-75">
+                            <input type="text" id="yname" name="yourname" placeholder="Your Name*" required="">
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-75">
+                            <input type="text" id="eml" name="email" placeholder="Email*" required="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-75">
+                            <input type="text" id="msg" name="message" placeholder="Message*" required="">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <input type="submit" value="SEND" style="cursor: pointer" required="">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>

@@ -1,0 +1,315 @@
+﻿@model SmartHome.Models.AboutUsViewModelClass
+
+
+<link href="~/css/about_us.css" rel="stylesheet" />
+
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+
+
+<div class="aboutus_section1">
+    <div class="aboutus_section1_text1">WHO We Are</div>
+</div>
+
+<div class="aboutus_section2">
+    <div class="aboutus_sctn2_sol">
+        <img class="aboutus_sctn2_solresim1" src="~/img/aboutus1.jpg">
+    </div>
+    <div class="aboutus_sctn2_sag">
+        <div class="aboutus_sctn2_sagbaslik">SMARTHOME Company</div>
+        <div class="aboutus_sctn2_sagaciklama">
+            <div class="aboutus_sctn2_sagparagrf">
+                The place where you can do anything you want. The home
+                that warms the floor before you get out of bed and puts your favorite song on. We offer
+                premium home automation systems with personalization features. It is a powerful, wireless
+                home-control networking technology. Lighting control, scene lighting, timers, control &
+                status on smartphones and tablets, leak, door & motion sensing and garage door control
+                are some of the more popular applications.
+            </div>
+            <div class="aboutus_sctn2_sagparagrf">
+                Insteon-compatible products are affordable, easy-to-program devices that communicate over your
+                home's existing wiring and over radio-frequency signals, a dual-mesh system that significantly
+                increases signal reliability.
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="aboutus_section3">
+    <div class="aboutus_sec3_container">
+        <div class="aboutus_sctn3_text1"> SERVICES Catalog </div>
+        <div class="aboutus_sctn3_text2">Our home security services ensure that you feel safe and secure in your home.</div>
+        <div class="aboutus_sctn3_sunulanlar">
+            <div class="a_u_sunulan">
+                @if (Model != null)
+                {
+                    @foreach (var hizmet in Model.usHizmetlers)
+                    {<div class="a_u_sunulan1">
+
+                            <i class="fa fa-check p_s_check" aria-hidden="true"></i>
+                            <!-- <p class="full_plantext" >Full planning and configuration assistance </p></div> -->
+                            <p class="p_hizmetler">@hizmet.HizmetText</p>
+
+
+                        </div>
+                    }
+                }
+            </div>
+            <!--<div class="a_u_sunulan1">
+                <i class="fa fa-check p_s_check" aria-hidden="true"></i>-->
+            <!-- <p class="full_plantext" >Full planning and configuration assistance </p></div> -->
+            <!--<p class="p_hizmetler">  Full planning and configuration assistance</p>
+                </div>
+
+                <div class="a_u_sunulan1">
+                    <i class="fa fa-check p_s_check" aria-hidden="true"></i>
+                    <p class="p_hizmetler">Annual maintenance checks</p>
+                </div>
+                <div class="a_u_sunulan1">
+                    <i class="fa fa-check p_s_check" aria-hidden="true"></i>
+                    <p class="p_hizmetler">Product consultation & training courses</p>
+                </div>
+
+            </div>
+            <div class="a_u_sunulan">
+                <div class="a_u_sunulan1">
+                    <i class="fa fa-check p_s_check" aria-hidden="true"></i>
+                    <p class="p_hizmetler">Discreet installation</p>
+                </div>
+                <div class="a_u_sunulan1">
+                    <i class="fa fa-check p_s_check" aria-hidden="true"></i>
+                    <p class="p_hizmetler">24-hour alarm monitoring</p>
+                </div>
+                <div class="a_u_sunulan1">
+                    <i class="fa fa-check p_s_check" aria-hidden="true"></i>
+                    <p class="p_hizmetler">Full cover maintenance</p>
+                </div>
+
+            </div>-->
+
+        </div>
+    </div>
+</div>
+
+
+<div class="aboutus_section4">
+    <i class="fa-solid fa-circle-play abouts_section4_playmodal"></i>
+    <img class="resim" style="width: 100%;height:40vh;object-fit:cover;" src="~/img/aboutusvideoresim.jpg">
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <div class="blur"></div>
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <iframe width="100%"; height="100%" ; src="https://www.youtube.com/embed/Scxs7L0vhZ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+</div>
+
+<script>
+    $(document).ready(function () {
+        $(".close").click(function () {
+            $("#myModal").hide();
+            $(".resim").show();
+            $(".fa-circle-play").show();
+
+
+
+        });
+        $(".fa-circle-play").click(function () {
+            $("#myModal").show();
+
+
+            $(".fa-circle-play").hide();
+
+
+            $(".resim").hide();
+
+        });
+    });
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="aboutus_section5">
+    <div class="abts_sctn5_text1">
+        <div class="abts_sctn5_text1_baslik">MEET the Team</div>
+        <div class="abts_sctn5_text1_aciklama">
+            Our professional are always care about our clients and try to create the best working environment
+
+        </div>
+    </div>
+    <div class="abts_sctn5_text1_cards">
+        <div class="abts_sctn5_text1_cards_satir">
+            @if (Model != null)
+            {
+                foreach (var kisibilgi in Model.aboutUs)
+                {
+                    <div class="abts_sctn5_text1_card">
+                        <div class="abs_sec5_t1_c_resim">
+                            @*<img class="abs_sec5_t1_c_kisiresim_" src="~/img/person1.jpg">*@
+                            <img class="abs_sec5_t1_c_kisiresim_" src="@kisibilgi.ResimUrl">
+                        </div>
+                        <div class="a_sec5_personhakkinda">
+
+                            <div class="a_sec5_kisibilgileri">
+
+                                <div class="a_sec5_kisiad">@kisibilgi.Name</div>
+                                <div class="a_sec5_kisimeslek">@kisibilgi.Meslek</div>
+
+                            </div>
+
+
+                            <hr class="about_hr"@* color="#025bff" style="width: 100%;"*@><!--  cizgi hr etiketiyle  olusturuldu -->
+                            <div class="a_sec5_icons">
+                                <div class="a_sec5_icon1"><i class="fa-brands fa-facebook-f"></i></div>
+                                <div class="a_sec5_icon2"><i class="fa-brands fa-twitter"></i></div>
+                                <div class="a_sec5_icon3"><i class="fa-brands fa-instagram"></i></div>
+
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+
+
+            <!--<div class="abts_sctn5_text1_card">
+                <div class="abs_sec5_t1_c_resim">
+                    <img class="abs_sec5_t1_c_kisiresim_" src="~/img/person2.jpg">
+
+                </div>
+
+
+                <div class="a_sec5_personhakkinda">
+
+                    <div class="a_sec5_kisibilgileri">
+                        <div class="a_sec5_kisiad">Anna Green</div>
+                        <div class="a_sec5_kisimeslek">Co-Founder</div>
+
+                    </div>
+                    <hr color="#025bff" style="width: 100%;">-->
+            <!--  cizgi hr etiketiyle  olusturuldu -->
+            <!--<div class="a_sec5_icons">
+                        <div class="a_sec5_icon1"><i class="fa-brands fa-facebook-f"></i></div>
+                        <div class="a_sec5_icon2"><i class="fa-brands fa-twitter"></i></div>
+                        <div class="a_sec5_icon3"><i class="fa-brands fa-instagram"></i></div>
+
+                    </div>
+                </div>
+            </div>-->
+        </div>
+
+        <!--<div class="abts_sctn5_text1_cards_sutun">
+            <div class="abts_sctn5_text1_card">
+                <div class="abs_sec5_t1_c_resim">
+                    <img class="abs_sec5_t1_c_kisiresim_" src="~/img/person3.jpg">
+
+                </div>
+                <div class="a_sec5_personhakkinda">
+                    <div class="a_sec5_kisibilgileri">
+                        <div class="a_sec5_kisiad">Laura Stevens</div>
+                        <div class="a_sec5_kisimeslek">PR Manager</div>
+                    </div>
+                    <hr color="#025bff" style="width: 100%;">-->
+        <!--  cizgi hr etiketiyle  olusturuldu -->
+        <!--<div class="a_sec5_icons">
+                    <div class="a_sec5_icon1"><i class="fa-brands fa-facebook-f"></i></div>
+                    <div class="a_sec5_icon2"><i class="fa-brands fa-twitter"></i></div>
+                    <div class="a_sec5_icon3"><i class="fa-brands fa-instagram"></i></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="abts_sctn5_text1_card">
+            <div class="abs_sec5_t1_c_resim">
+                <img class="abs_sec5_t1_c_kisiresim_" src="~/img/person4.jpg">
+
+            </div>
+            <div class="a_sec5_personhakkinda">
+
+                <div class="a_sec5_kisibilgileri">
+                    <div class="a_sec5_kisiad">Adam Brooks</div>
+                    <div class="a_sec5_kisimeslek">Web Developer</div>
+                </div>
+                <hr color="#025bff" style="width: 100%;">-->
+        <!--  cizgi hr etiketiyle  olusturuldu -->
+        <!--<div class="a_sec5_icons">
+                        <div class="a_sec5_icon1"><i class="fa-brands fa-facebook-f"></i></div>
+                        <div class="a_sec5_icon2"><i class="fa-brands fa-twitter"></i></div>
+                        <div class="a_sec5_icon3"><i class="fa-brands fa-instagram"></i></div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>-->
+
+    </div>
+
+</div>
+
+<div class="aboutus_section6">
+    <div class="abouts_sctn6_form">
+        <div class="abouts_sctn6_formbaslik">CREATE YOUR PERSONAL Smart Home Project</div>
+        <div class="abouts_sctn6_formaciklama">We re here to answer any questions you might have about living in a Smart Home.</div>
+        <div class="callnow"><a class="callnoww" href="tel:1234567890" data-action="call" class="moto-link">Call Now: (123) 456 7890</a></div>
+        @*@if (Model != null)
+            {*@
+
+        <div class="aboutus_section6_form1">
+            @*methodu post olan kullanicilar icindeki indexe git*@
+            <form action="/AboutUs/FormTextEkle" method="post">
+                @*@foreach (var aboutusform in Model.usForms)
+                    {*@
+
+                <div class="row">
+                    <div class="col-75"> <input name="Name" type="text" placeholder="Your Name*" required="">@*@aboutusform.Name*@</div>
+                </div>
+                <div class="row">
+                    <div class="col-75"><input name="FormMail" type="text" placeholder="Email*" required="">@*@aboutusform.FormMail*@</div>
+                </div>
+                <div class="row">
+                    <div class="col-75"><input name="FormText" type="text" placeholder="Message*" required="">@*@aboutusform.FormText*@</div>
+                </div>
+                <br>
+                <div class="row">
+                    <input type="submit" value="Send">
+                </div>
+
+                @*}*@
+
+            </form>
+        </div>
+        <!--}-->
+
+    </div>
+    <div class="aboutus_section6_resim">
+        <img id="sagcamera" src="~/img/camera.jpg " alt="">
+    </div>
+</div>
+
+
+

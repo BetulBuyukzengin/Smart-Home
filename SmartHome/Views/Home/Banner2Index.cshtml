@@ -1,0 +1,97 @@
+﻿@using SmartHome.Models
+@model List<Banner2>
+
+  <section class="banner2">
+      <div class="container">
+          
+
+          @foreach (var x in Model)
+          {
+
+              <div class="bn2text">@x.Bn2text </div>
+
+              <div class="ust">
+                  <div class="card-a">
+                      <div class="a1 tumicon">
+                          <img src="img/m1.jpg" class="card-img-top" alt="">
+                      </div>
+                      <div class="card-body">
+                          <p class="card-text">@x.CardText1</p>
+                      </div>
+                  </div>
+
+
+                  <div class="card-a">
+                      <div class="b1 tumicon">
+                          <img src="img/m2.jpg" class="card-img-top" alt="">
+                      </div>
+                      <div class="card-body">
+                          <p class="card-text">@x.CardText2</p>
+                      </div>
+                  </div>
+
+                  <div class="card-a">
+                      <div class="c1 tumicon">
+                          <img src="img/m3.jpg" class="card-img-top" alt="">
+                      </div>
+                      <div class="card-body">
+                          <p class="card-text">@x.CardText3 </p>
+                      </div>
+                  </div>
+
+                  <div class="card-a">
+                      <div class="d1 tumicon">
+                          <img src="img/m4.jpg" class="card-img-top" alt="">
+                      </div>
+                      <div class="card-body">
+                          <p class="card-text">@x.CardText4</p>
+                  </div>
+              </div>
+
+
+          </div>
+
+
+          <div class="alt">
+
+              <div class="card-a">
+                  <div class="e1 tumicon">
+                      <img src="img/m5.jpg" class="card-img-top" alt="">
+                  </div>
+                  <div class="card-body">
+                      <p class="card-text">@x.CardText5</p>
+                  </div>
+              </div>
+
+
+              <div class="card-a">
+                  <div class="f1 tumicon">
+                      <img src="img/m6.jpg" class="card-img-top" alt="">
+                  </div>
+                  <div class="card-body">
+                      <p class="card-text">@x.CardText6</p>
+                  </div>
+              </div>
+              <div class="card-a">
+                  <div class="g1 tumicon">
+                      <img src="img/m7.jpg" class="card-img-top" alt="">
+                  </div>
+                  <div class="card-body">
+                      <p class="card-text">@x.CardText7</p>
+                  </div>
+              </div>
+              <div class="card-a">
+                  <div class="h1 tumicon">
+                      <img src="img/m8.jpg" class="card-img-top" alt="">
+                  </div>
+                  <div class="card-body">
+                      <p class="card-text">@x.CardText8</p>
+                  </div>
+              </div>
+
+          </div>
+          }
+      </div>
+        
+    </section>
+   

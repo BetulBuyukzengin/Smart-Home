@@ -1,0 +1,29 @@
+﻿@model List<Kullanicilar>
+@{
+    ViewData["Title"] = "AdminDashboard";
+    Layout = "~/Views/Shared/AdminDashboardLayout.cshtml";
+}
+
+<table id="table">
+
+    <tr>
+        <th> Ad</th>
+        <th> E-Posta</th>
+        <th>Mesaj</th>
+        <th> Durum</th>
+
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr class="veriler">
+            @*Tablo sütununu verilere göre arttırarak işlem kolaylığı sağlar*@
+
+            <td>@item.Ad </td>
+            <td>@item.Posta</td>
+            <td>@item.Mesaj</td>
+            @*AdminDashboard Controller'ındaki MesajSil IActionResult'ına git id ile gelen satırı sil*@
+            <td><a href="/AdminDashboard/MesajSil/@item.Id" class="btn btn-danger">Sil</a></td>
+
+        </tr>
+    }
+    </table>

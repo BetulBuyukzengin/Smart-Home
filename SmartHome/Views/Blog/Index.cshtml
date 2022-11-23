@@ -1,0 +1,130 @@
+﻿@model SmartHome.Models.BlogViewModel
+<link href="~/css/blog.css" rel="stylesheet" />
+
+
+
+<div id="blogactive" class="blogactive">
+    <div class="blog_section1">
+        <div class="blog_sec1_text">BLOG</div>
+    </div>
+
+
+    <div class="containerblog">
+        <div class="containerblogjquery">
+            <div class="tab-content">
+
+                @*<div id="0" class="blog_section2 tab-pane fade in active">
+                <container>*@
+                @if (Model != null)
+                {
+                    foreach (var category in Model.BlogCategories)
+                    {
+
+                        <div id="@category.Id" class="blog_section2 tab-pane fade in active">
+                            @foreach (var BlogM in Model.BlogList)
+                            {
+                                if (category.Id == BlogM.KategoriId)
+                                {
+                                    <div class="blog_sec2_commonMistakes">
+                                        <!-- <a class="commonMistake" href="https://www.google.com.tr/">THE MOST COMMON MISTAKES WHEN MANAGING PERSONAL FINANCES
+                                        </a> -->
+                                        <div class="commonMistake">
+                                            <a class="commonMistake" href="https://www.google.com.tr/">
+                                                @BlogM.Baslik
+                                            </a>
+                                        </div>
+                                        <!-- <button class="commonMistake" style="border:none">THE MOST COMMON MISTAKES WHEN MANAGING PERSONAL FINANCES</button> -->
+                                        <div class="blog_sec2_resim1">
+                                            <img class="blog_sec2_comMisresim1" src="@BlogM.Resim">
+                                            <span>@BlogM.Resim</span>
+                                        </div>
+                                        <div class="blog_section2text1">
+                                            @BlogM.Aciklama
+                                        </div>
+                                        <button class="blog_readmore">READ MORE</button>
+                                    </div> <div class="blog_cizgi"></div>
+                                }
+                            }
+                        </div>
+                    }
+                    <div class="sabitblogtext" style="margin: 0 0 0 4%;">
+                        The budget is the most basic thing in financial planning. It is therefore especially important to be careful when compiling the budget. To start you have to draw up your own budget for the next month and only after it you may make a yearly budget.
+
+
+
+                        As the basis takes your monthly income, subtract from it such regular expenses as the cost of housing, transportation, and then select 20-30% on savings or mortgage loan payment.
+
+                        The rest can be spent on living: restaurants, entertainment, etc. If you are afraid of spending too much, limit yourself in weekly expenses by having a certain amount of ready cash.
+
+
+
+                        "When people borrow, they think that they should return it as soon as possible," said Sofia Bera, a certified financial planner and founder of Gen Y Planning company. And at its repayment spend all that earn. But it's not quite rationally ".
+
+
+
+                        If you don't have money on a rainy day, in case of an emergency (e.g. emergency of car repairs) you have to pay by credit card or get into new debts. Keep on account of at least $1000 in case of unexpected expenses. And gradually increase the "airbag" to an amount equal to your income for up to three-six months.
+
+
+
+                        "Usually when people plan to invest, they only think about profit and they don't think that loss's possible", says Harold Evensky, the President of the financial management company Evensky & Katz. He said that sometimes people do not do basic mathematical calculations.
+
+                        For example, forgetting that if in one year they lost 50%, and the following year they received 50% of the profits, they did not return to the starting point, and lost 25% savings. Therefore, think about the consequences. Get ready to any options. And of course, it would be wiser to invest in several different investment objects.
+
+
+                    </div>
+
+                }
+
+
+
+
+            </div>
+
+            <div class="containerblog_jquerymmenu">
+                <div class="containerblog_jquery_menu">
+                    <p class="baslikcategory">CATEGORY</p>
+                    <ul class="nav nav-tabs">
+
+                        @foreach (var category in Model.BlogCategories)
+                        {
+                            <li>
+                                <a class="jq_categori" href="#@category.Id">@category.Baslik</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+
+
+
+                <div class="blog_sec3_categorybaslikrecentpost">RECENT POST</div>
+                <div class="blog_sec3_cards">
+                    @foreach (var blog in Model.BlogList.OrderBy(x => x.Tarih).Take(5))
+                    {
+                        <div class="blog_sec3_card">
+                            <div class="blog_sec3_cardresim">
+                                <img class="blog_sec3_cardresim" src="@blog.Resim">
+                            </div>
+                            <div class="blog_sec3_cardaciklama">
+
+                                @blog.Baslik
+                            </div>
+                        </div>
+                    }
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function() {
+        $(".nav-tabs a").click(function() {
+
+            $(this).tab('show');
+        });
+    });
+</script>

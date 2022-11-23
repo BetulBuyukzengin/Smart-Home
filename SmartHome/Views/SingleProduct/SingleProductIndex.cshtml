@@ -1,0 +1,144 @@
+﻿@model List<SingleProduct>
+@*<link href="~/css/singleproduct.css?v2" rel="stylesheet" ver />
+*@
+<link href="~/css/singleproduct.css" rel="stylesheet" ver />
+<link href="~/css/menu_footer.css" rel="stylesheet" ver />
+
+
+
+<div class="sproduct_section1">
+    <div class="sproduct_section1_text">DIGITAL Door Lock SRT-456 </div>
+</div>
+<div class="sproduct_section2">
+    <div class="spr_section2_kisim1">
+        <div class="spr_section2_kisim1_1">
+            <div class="spr_sec2_ksm1_baslik">DIGITAL Door Lock SRT-456</div>
+            <div class="spr_sec2_ksm1_aciklama">Our home security services ensure that you feel safe and secure in your home.</div>
+            <div class="spr_sec2_ksm1_hakkinda">
+                <div class="hakkinda_sag">
+                    <div class="hakkindaki_veriler">Categories</div>
+                    <div class="hakkindaki_veriler">Connectivity</div>
+                    <div class="hakkindaki_veriler">App</div>
+                    <div class="hakkindaki_veriler">Model</div>
+                    <div class="hakkindaki_veriler">Year if Issue </div>
+
+                </div>
+                @if (Model != null)
+                {
+                    <div class="hakkinda_sol">
+
+                        @foreach (var t in Model)
+                        {
+                            <div class="hakkindaki_veriler">@t.Urun_ozellik</div>
+                        }
+                    </div>
+                }
+                else
+                {
+                    <div class="hakkindaki_veriler">Değerler boş</div>
+
+                }
+            </div>
+            <div class="hakkinda_sol_fiyat">$239</div>
+
+        </div>
+        <img src="~/img/s_prdctsec2kisim2.jpg">
+    </div>
+
+    <div class="spr_section2_kisim2">
+        <div class="sol_sectn2_kisim2">
+            <div class="sol_s1_ksm2_baslk">PRODUCT DESCRIPTION</div>
+            <div class="sol_s1_ksm2_acklama">
+                Aliquam placerat eget lacus scelerisque feugiat.
+                Sed ante arcu, laoreet vel dolor in, condimentum fringilla tortor. Duis nec sem ante. Curabitur eu lacus nisi.
+                Nulla facilisi. Nullam justo lacus, vulputate quis posuere vitae, commodo non metus. Nullam lorem augue, dictum
+                ut finibus quis, dictum nec nisl. Mauris id nisl nec leo pretium eleifend lacinia a lacus. Ut vel auctor enim.
+                Nam ut varius arcu.
+            </div>
+            <div class="sol_s1_ksm2_btns">
+                <div class="btns1 btns1_2ozell">BUY NOW</div>
+                <button class="btns2 btns1_2ozell">BACK TO CATALOG</button>
+
+            </div>
+
+        </div>
+        <div class="sag_sect2_kisim2">
+            <div class="sol_s1_ksm2_baslk">PRODUCT FEATURES</div>
+            <div class="list_feat">
+                <div class="sol_s1_ksm2_altbaslk">
+                    <div class="LockF">Lock Features:</div>
+                    <div class="AppF">App Features:</div>
+
+                </div>
+                <div class="lockapp_features">
+                    <div class="lockapp_feature">
+                        <div class="lock_text"><i class="fa-solid fa-check checksingle"></i>Key Free Deadbolt</div>
+                        <div class="lock_text"><i class="fa-solid fa-check checksingle"></i>Auto Relock</div>
+                        <div class="lock_text"><i class="fa-solid fa-check checksingle"></i>Simple Installation</div>
+                        <div class="lock_text"><i class="fa-solid fa-check checksingle"></i>One-Touch Locking </div>
+                        <div class="lock_text"><i class="fa-solid fa-check checksingle"></i>Low Battery Alerts</div>
+
+                    </div>
+                    <div class="lockapp_feature2">
+                        <div class="lock_text"><i class="fa-solid fa-check checksingle"></i>
+                            Access From Anywhere
+                        </div>
+                        <div class="lock_text"><i class="fa-solid fa-check checksingle"></i>
+                            Unique Passcodes
+                        </div>
+                        <div class="lock_text"><i class="fa-solid fa-check checksingle"></i>
+                            Access History
+                        </div>
+                        <div class="lock_text"><i class="fa-solid fa-check checksingle"></i>
+                            Works with Nest Secure Alarm System
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+<hr />
+<div class="sproduct_section3">
+    <div class="relatedproducts">RELATED Products</div>
+    <div class="relapro_karts">
+        <div class="relapro_kart">
+            <div class="relapro_kart_resim"><img src="~/img/singproduct1.jpg"></div>
+            <div class="cont">
+                <div class="relapro_kart_ad_fiyat">
+                    <div class="relapro_kart_ad">Ring Stick Up Cam SEcurity Camera FST-35J</div>
+                    <div class="relapro_kart_fiyat">$167</div>
+
+                </div>
+                <div class="relapro_kart_satinal">BUY NOW</div>
+            </div>
+        </div>
+        <div class="relapro_kart">
+            <div class="relapro_kart_resim"><img src="~/img/singproduct2.jpg"></div>
+            <div class="relapro_kart_ad_fiyat">
+                <div class="relapro_kart_ad">Home Security Camera Mini Pro FTY-45 JS </div>
+                <div class="relapro_kart_fiyat">$289</div>
+
+            </div>
+            <div class="relapro_kart_satinal">BUY NOW</div>
+
+        </div>
+        <div class="relapro_kart">
+            <div class="relapro_kart_resim"><img src="~/img/singproduct3.jpg"></div>
+            <div class="relapro_kart_ad_fiyat">
+                <div class="relapro_kart_ad">Outdoor Wireless HD Security Camera SGY-23</div>
+                <div class="relapro_kart_fiyat">$167</div>
+
+            </div>
+            <div class="relapro_kart_satinal">BUY NOW</div>
+
+        </div>
+
+    </div>
+
+</div>
