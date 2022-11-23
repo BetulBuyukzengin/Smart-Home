@@ -1,0 +1,161 @@
+﻿body {
+    margin:0;
+}
+.contact_section1 {
+    background-image: url(/img/mt.jpg);
+    width: 100%;
+    background-size: cover;
+    height: 19.5rem;
+    margin:7% 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_us {
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Coda', display;
+    color: #171e43;
+    width: 90%;
+    font-size: 60px;
+    line-height: 1.1;
+    letter-spacing: 1px;
+}
+/********/
+body {
+    margin: 0;
+}
+
+.contact_section2 {
+    justify-content: space-evenly;
+    width: 100%;
+    display: flex;
+    padding: 4% 0;
+    background-color: #003caa;
+}
+
+.contact_sec2_adresphonesemails {
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Coda', display;
+    color: #ffffff;
+    font-size: 36px;
+    /* line-height: 1.5; */
+    letter-spacing: 0px;
+    padding: 9% 0 0 0;
+}
+
+.padding_5 {
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contactsec2icons {
+    color: white;
+    font-size: 37px;
+}
+
+.icon_ortala {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact_sec2_iletisim {
+    font-weight: 300;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    /* line-height: 1.5; */
+}
+/**************************************/
+.contact_section3 {
+    display: flex;
+    padding: 6%;
+    justify-content: space-between;
+}
+
+.prtnrs_sctn4_form {
+    width: 54%;
+}
+
+.contact_sctn3_formtext {
+    line-height: 10vh; /*gerekli mi kontrol et  yerine padding mi ?*/
+}
+
+.contact_sctn3_formbaslik {
+    font-family: 'Coda', display;
+    color: #171e43;
+    font-size: 50px;
+}
+
+.contact_sctn3_formaciklama {
+    font-family: 'Roboto', sans-serif;
+    color: #171e43;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+/*       Form    */
+input[type=text], select, textarea {
+    width: 100%;
+    font-weight: 400;
+    border: 1px solid #ccc;
+    /* padding: 6% 0 6% 0; */
+    padding: 23px 20px;
+    border-radius: 4px;
+    font-style: normal;
+    /* resize: vertical; */
+    font-size: 14px;
+    /* margin-left: 35px; */
+    color: #728288;
+    background-color: #f2f2f2;
+    border-color: #f2f2f2;
+}
+
+input[type=submit] {
+    font-family: 'Coda', display;
+    font-weight: 400;
+    border-color: transparent;
+    font-style: normal;
+    background-color: #02d6fc;
+    color: #171e43;
+    padding: 4%;
+    width: 32%;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+    input[type=submit]:hover {
+        background-color: #0049d1;
+        color: white;
+        cursor: pointer;
+    }
+
+.col-75 {
+    width: 86%;
+    margin-top: 6px;
+}
+
+#yname:focus-visible {
+    border: 1px solid red;
+}
+
+#eml:focus-visible {
+    border: 1px solid red;
+}
+
+#msg:focus-visible {
+    border: 1px solid red;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}

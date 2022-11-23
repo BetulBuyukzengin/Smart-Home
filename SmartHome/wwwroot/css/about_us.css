@@ -1,0 +1,389 @@
+﻿.aboutus_section1 {
+    width: 100%;
+    background-image: url(/img/mt.jpg);
+    background-size: cover;
+    background-position: center;
+   /* height: 17rem;*/
+    margin: 8% 0 0 0;
+    display: flex;
+    padding: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutus_section1_text1 {
+    width: 90%;
+    font-family: 'Coda', display;
+    color: #171e43;
+    font-size: 60px;
+}
+/*****section2***********/
+.aboutus_section2 {
+    padding: 4%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.aboutus_sctn2_sagbaslik {
+    font-family: 'Coda', display;
+    color: #171e43;
+    font-size: 50px;
+}
+
+.aboutus_sctn2_sagparagrf {
+    font-family: 'Roboto', sans-serif;
+    color: #171e43;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.aboutus_sctn2_sag {
+    width: 44%;
+}
+
+.aboutus_sctn2_solresim1 {
+    height: 30rem;
+}
+/*****section3**********/
+
+.abouts_section3 {
+    width: 100%;
+    height: 28rem;
+}
+
+.aboutus_sctn3_text1 {
+    font-family: 'Coda', display;
+    color: #171e43;
+    font-size: 50px;
+    margin: 0 0 0 5%;
+}
+.aboutus_sctn3_text2 {
+    font-weight: 300;
+    margin:1% 0 0 5%;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    color: #171e43;
+    font-size: 18px;
+}
+.aboutus_sctn3_sunulanlar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.a_u_sunulan {
+    flex-wrap: wrap;
+    display: flex;
+    margin: 2% 0 0 4%;
+}
+
+.a_u_sunulan1 {
+    padding: 4% 3%;
+    font-family: 'Coda', display;
+    color: #171e43;
+    font-size: 20px;
+    border-style: solid;
+    width: 32%;
+    display: flex;
+    flex: 0 0 31%;
+    flex-direction: row;
+    border-style: solid;
+    border-color: #e6e6e6;
+    border-left-width: 1px;
+    border-right-width: 3px;
+    border-top-width: 1px;
+    border-bottom-width: 3px;
+    border-radius: 2%;
+    border-color: #e6e6e6;
+    margin: 0.8%;
+}
+.p_s_check {
+    color: #02d6fc;
+    font-size: 25px;
+    margin: 0 6% 0 0;
+}
+.aboutus_sec3_container {
+    padding: 4%;
+}
+
+.a_u_check {
+    color: #02d6fc;
+    padding: 1%;
+}
+/*********section4*******/
+.aboutus_section4 {
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutus_section4_resim {
+    position: absolute;
+    object-fit: cover;
+    position: absolute;
+    width: 99%;
+    height: 45vh;
+}
+
+.abouts_section4_playmodal {
+    position: absolute;
+    color: white;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+/*******************/
+.aboutus_section5 {
+    padding: 5%;
+}
+.abts_sctn5_text1{
+    margin:0 0 0 1%;
+}
+
+.abts_sctn5_text1_baslik {
+    font-family: 'Coda', display;
+    color: #171e43;
+    font-size: 50px;
+    line-height: 1;
+    display: flex;
+    width: 38%;
+}
+
+
+.abts_sctn5_text1_aciklama {
+    font-family: 'Roboto', sans-serif;
+    color: #171e43;
+    display: flex;
+    font-size: 16px;
+    padding:1% 0;
+    width: 68%;
+}
+
+.a_sec5_personhakkinda {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 0 9% 0;
+    margin: 0 0 0 9%;
+    justify-content: space-around;
+}
+
+.a_sec5_kisibilgileri {
+    height: 11vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 13vh;
+}
+
+.a_sec5_kisiad {
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    color: #171e43;
+    font-size: 24px;
+    line-height: 1.2;
+    /* color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;*/
+}
+
+.a_sec5_kisimeslek {
+    font-family: 'Roboto', sans-serif;
+    color: #171e43;
+    font-size: 16px;
+}
+
+.abts_sctn5_text1_card {
+    width: 52%;
+    flex:0 0 48%;
+    display: flex;
+    margin: 0.7%;
+    justify-content: flex-start;
+    background-color: #f2f2f2;
+}
+
+.a_sec5_icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.abts_sctn5_text1_cards_satir {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.abts_sctn5_text1_cards_sutun {
+    display: flex;
+}
+.modal {
+    /*display: none;*/ /* Hidden by default */
+    /* position: fixed;  Stay in place */
+    /*z-index: 1;*/ /* Sit on top */
+    /*  p  adding-top: 100px;Location of the box */
+    /*width: 50%;*/ /* Full width */
+    /*height: 100%;  Full height */
+    /*   overflow: auto; scroll ekliyor*/
+    /*background-color: rgb(0,0,0); 
+    background-color: transparent;*/
+    display: none;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    position: fixed;
+    align-items: center;
+
+}
+
+
+
+
+.blur {
+    background-color: #171e43;
+    opacity: 0.65;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+
+}
+/* Modal Content */
+.modal-content {
+/*    margin: auto;
+*/   
+    margin: 0 0 0 17%;
+    /* margin: auto; */
+    /* height: 433px; */
+    /* z-index: 10000; */
+    width: 72%;
+    /* margin: 25% 0; */
+    position: absolute;
+    height: 100vh;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.aboutus_section6 {
+    min-height: 80vh;
+    line-height: 40px;
+    display: flex;
+    margin: 0 0 5% 0;
+    padding: 0 5% 0 0;
+    box-sizing: border-box;
+}
+
+.abouts_sctn6_form {
+    margin-left: 8%;
+}
+
+.banner6 .sol .form1 {
+    margin-left: -5%;
+}
+
+.about_hr {
+    border-top: solid 1px #025bff;
+}
+
+
+.abouts_sctn6_formbaslik {
+    font-weight: 400;
+    color: #171e43;
+    font-style: normal;
+    font-family: 'Coda', display;
+    font-size: 50px;
+    line-height: 70px;
+    letter-spacing: 1px;
+}
+
+.solaciklama {
+    font-weight: 300;
+    font-size: 16px;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    color: #171e43;
+    line-height: 1.2;
+}
+
+.callnow {
+    color: #025bff;
+    font-weight: 300;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.banner6 .sol .form1 .row .col-75 {
+    color: #f2f2f2;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    font-weight: 400;
+    border: 1px solid #ccc;
+    padding: 12px;
+    border-radius: 4px;
+    font-style: normal;
+    resize: vertical;
+    color: #728288;
+    background-color: #f2f2f2;
+    border-color: #f2f2f2;
+}
+
+input[type=submit] {
+    font-family: 'Coda', display;
+    font-weight: 400;
+    border-color: transparent;
+    font-style: normal;
+    background-color: #02d6fc;
+    color: #171e43;
+    cursor:pointer;
+    height: 65px;
+    width: 21%;
+    border-radius: 5px;
+}
+
+.a1 {
+    align-items: center;
+}
+
+input[type=submit]:hover {
+    background-color: #0049d1;
+    color: white;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.callnoww {
+    font-weight: bold;
+    text-decoration: none;
+    color: #025bff;
+}

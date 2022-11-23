@@ -1,0 +1,167 @@
+﻿body {
+    margin: 0;
+}
+
+.supportcenter_sec1 {
+    background-size: cover;
+    background-image: url(/img/mt.jpg);
+    height: 48vh;
+    display: flex;
+    margin:4% 0;
+    align-content: space-between;
+    align-items: center;
+}
+
+.supportcenter_text1 {
+    font-family: 'Coda', display;
+    color: #171e43;
+    font-size: 60px;
+    padding-left: 9%;
+}
+/*****section 2******/
+
+.supportcenter_sec2 {
+    background-image: url(/img/r8.jpg);
+    background-size: cover;
+    height: 78vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.supportcenter_cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.supportcenter_card {
+    background-color: white;
+    padding: 2%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    margin: 3%;
+    flex-direction: column;
+}
+
+.supportcenter_baslik2 {
+    font-family: 'Coda', display;
+    color: #ffffff;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.supportcenter_card_baslik {
+    font-family: 'Coda', display;
+    color: #1d0e64;
+    font-size: 26px;
+}
+
+.supportcenter_card_acikl {
+    font-family: 'Roboto', sans-serif;
+    color: #171e43;
+    font-size: 18px;
+    margin: 6% 0;
+}
+
+.fa-file {
+    color: #02d6fc;
+    margin: 2%;
+}
+
+.supportcenter_card_down_watch_more {
+    font-style: normal;
+    color: #171e43;
+    background-color: #02d6fc;
+    font-size: 16px;
+    width: 168px;
+    text-align:center;
+    padding: 7%;
+    border-radius: 4%;
+    cursor: pointer;
+}
+
+    .supportcenter_card_down_watch_more:hover {
+        color: #ffffff;
+        background-color: #003caa;
+        border-color: #003caa;
+    }
+/*****section 3******/
+
+.supportcenter_sec3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.EuAmer_SpprtCenterbaslik {
+    font-family: 'Coda', display;
+    font-size: 36px;
+    color: #171e43;
+    padding: 0 0 9% 0;
+}
+
+.Eu_SpprtCentersolsag {
+    display: flex;
+    justify-content: space-between;
+    width: 114%;
+}
+
+.Eu_SpprtCentersolsaat {
+    font-weight: 300;
+    font-style: normal;
+    font-family: co;
+    color: #171e43;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0px;
+}
+
+.Amer_SpprtCentersolsaat {
+    font-weight: 300;
+    font-style: normal;
+    font-family: co;
+    color: #171e43;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0px;
+}
+
+.Amer_SpprtCentersolsag {
+    display: flex;
+    justify-content: space-between;
+    width: 114%;
+}
+
+.renk_crsor {
+    font-weight: 300;
+    font-style: normal;
+    font-family: co;
+    color: #171e43;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0px;
+    /*    color: #1d0e64;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom:10%;*/
+}
+
+.supportcentericons {
+    color: #025bff;
+}
+
+.Eu_SpprtCenter {
+    display: flex;
+    flex-direction: column;
+    height: 48vh;
+    justify-content: center;
+}
+
+.Amer_SpprtCenter {
+    display: flex;
+    flex-direction: column;
+    height: 48vh;
+    justify-content: center;
+}

@@ -1,0 +1,463 @@
+﻿body {
+    margin: 0;
+}
+
+
+.security {
+    width: 100%;
+    height: 40vh;
+    background-image: url(../img/mt.jpg);
+    background-size: cover;
+    display: flex;
+    margin-top:6%;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text_security {
+    position: absolute;
+    padding: 6%;
+}
+
+.marg2_5 {
+    margin: 2% 5% 2% 5%;
+}
+
+.sec_baslik {
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Coda', display;
+    color: #171e43;
+    font-size: 61px;
+}
+
+.sec_aciklama {
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    color: #171e43;
+    font-size: 24px;
+}
+/* ************************************ */
+.hq_technology {
+    margin: 6% 0 3% 0;
+}
+
+
+.sec_product {
+    padding: 3%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.productimg {
+    width: 40%;
+    height: 72vh;
+}
+
+.sec_paragraf {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.par_baslik {
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Coda', display;
+    color: #171e43;
+    font-size: 50px;
+    line-height: 1;
+    width: 70%;
+}
+
+.par_acik {
+    width: 85%;
+    padding: 4% 0 4% 0;
+}
+
+.par_acik1 {
+    font-weight: 300;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    color: #171e43;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0px;
+    padding-bottom: 4%;
+}
+
+.par_acik2 {
+    font-weight: 300;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    color: #171e43;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0px;
+}
+
+.tech_baslik {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 9% 0 9%;
+}
+
+.High-QTechn {
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Coda', display;
+    color: #171e43;
+    font-size: 50px;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+
+.VIEWP_btn {
+    font-family: 'Coda', display;
+    font-weight: 400;
+    font-style: normal;
+    color: #171e43;
+    background-color: #02d6fc;
+    border-color: transparent;
+    font-size: 16px;
+    padding: 17px 15px;
+    min-width: 230px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 21px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+    .VIEWP_btn:hover {
+        color: #ffffff;
+        background-color: #003caa;
+        border-color: #003caa;
+    }
+
+.secsensorstyle {
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Coda', display;
+    color: #1d0e64;
+    font-size: 26px;
+    line-height: 1.5;
+    display: flex;
+}
+
+.kategori_list {
+    width: 32%;
+    margin-left: 9%;
+}
+
+.mar_3 {
+    margin: 3%;
+}
+
+.mtop_2 {
+    margin-top: 2%;
+}
+/*slider*/
+/* alttaki dairelere basılınca renk*/
+.prev:hover, .next:hover {
+    background-color: #02d6fc;
+}
+
+
+/* daireler*/
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #025bff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+    .active, .dot:hover {
+        background-color: #02d6fc;
+    }
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.tech_kategori {
+    display: flex;
+    width: 100%;
+}
+
+.tcategorislideshow {
+    width: 90%;
+}
+
+.imagnext {
+    margin-top: 3%;
+}
+/***************Son section*******************/
+.helpsonsection {
+
+
+    width: 100%;
+    background-image: url('../img/securityhelp.jpg');
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+}
+
+.containerhelpsection {
+    width: 84%;
+    padding: 3% 8%;
+}
+
+.helptanitim {
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Coda', display;
+    color: #ffffff;
+    font-size: 46px;
+    line-height: 1;
+    width: 100%;
+    padding-bottom: 3%;
+}
+
+.helpbtn {
+    font-family: 'Coda', display;
+    font-weight: 400;
+    font-style: normal;
+    color: #1d0e64;
+    background-color: #ffffff;
+    border-color: transparent;
+    width: 16%;
+    height: 8vh;
+    padding: 1% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+    .helpbtn:hover {
+        color: #ffffff;
+        background-color: #1d0e64;
+    }
+
+
+/*    MOBIL RESPONSIVE     */
+@media (max-width:510px) {
+    .body {
+        margin: 0;
+    }
+
+    .security {
+        justify-content: center;
+        align-items: absolute;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-image: url(~/img/mt.jpg);
+        display: flex;
+        align-items: center;
+    }
+
+    .text_security {
+        position: absolute;
+        padding: 0;
+        width: 100%;
+    }
+   
+    .sec_baslik {
+   
+        font-size: 25px;
+        line-height: 1.2;
+        letter-spacing: 1px;
+    }
+
+    .sec_aciklama {
+        font-weight: 400;
+        font-style: normal;
+        font-family: 'Roboto', sans-serif;
+        color: #171e43;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    /* ************************************ */
+
+
+    .sec_product {
+        padding: 4%;
+        display: flex;
+        width: 92%;
+        flex-direction: column;
+    }
+
+    .productimg {
+        width: 100%;
+    }
+
+    .sec_paragraf {
+        width: 100%;
+    }
+
+    .par_baslik {
+      
+        font-size: 25px;
+    }
+
+    .par_acik {
+        width: 100%;
+    }
+
+    .par_acik1 {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .par_acik2 {
+        font-size: 14px;
+    }
+
+    .hq_technology {
+        width: 100%;
+    }
+
+    .tech_baslik {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .High-QTechn {
+        font-size: 25px;
+    }
+
+    .VIEWP_btn {
+        font-size: 11px;
+        width: 4%;
+        min-width: 140px;
+        padding: 2% 0 2% 0;
+        margin: 2% 0 2% 21%;
+    }
+
+    .secsensorstyle {
+        font-size: 13px;
+        width: 94%;
+    }
+
+    .kategori_list {
+        width: 96%;
+        margin: 0;
+    }
+
+    .mar_3 {
+        margin: 3% 8% 3% 0%;
+    }
+
+    .mtop_2 {
+        margin-top: 2%;
+        font-size: 17px;
+    }
+    /*slider*/
+    /* alttaki dairelere basılınca renk*/
+    .prev:hover, .next:hover {
+        background-color: #02d6fc;
+    }
+
+
+    /* daireler*/
+    .dot {
+        height: 9px;
+        width: 9px;
+    }
+
+        .active, .dot:hover {
+            background-color: #02d6fc;
+        }
+
+    /* Fading animation */
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    .tech_kategori {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .tcategorislideshow {
+        width: 90%;
+    }
+
+    .imagnext {
+        margin: 2% 0 2% 17%;
+        width: 60%;
+    }
+    /***************Son section*******************/
+    .helpsonsection {
+
+        flex-direction: column;
+        background-size: 100%;
+        width: 100%;
+        justify-content: center;
+        height: 29vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+
+
+    .helptanitim {
+        line-height: 1;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .helpbtn {
+        padding: 2vh;
+        width: 27%;
+        height: 2vh;
+    }
+
+        .helpbtn:hover {
+            color: #ffffff;
+            background-color: #1d0e64;
+        }
+
+    .containerhelpsection {
+        width: 95%;
+        padding: 2% 0 2% 5%;
+    }
+}

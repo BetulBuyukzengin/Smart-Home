@@ -1,0 +1,452 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Roboto:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coda&family=Lora:ital,wght@1,500&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+}
+
+:focus {
+    outline: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    /*
+    width: 1300px;*/
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    background: #2d394b;
+    float: none;
+    padding: 10px 70px 10px 30px;
+    height: 60px; 
+    position: sticky;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+    .header .container {
+        display: flex;
+        padding-right: 10px;
+        padding-left: 10px;
+        align-items: center;
+        height: 60px;
+    }
+
+        .header .container .baslik {
+            margin-right: 40px;
+            height: 30px;
+        }
+
+            .active, .header .container .baslik :hover {
+                border-radius: auto;
+                color: white;
+            }
+
+            .header .container .baslik a {
+                font-size: small;
+                color: rgb(120, 177, 230);
+            }
+
+        .header .container .icons {
+            display: flex;
+            height: 30px;
+            margin-left: auto;
+        }
+
+            .header .container .icons a {
+                grid-gap: 10px;
+                font-size: 15px;
+                padding: 0 12px;
+                grid-template-columns: auto auto auto;
+                color: rgb(120, 177, 230);
+            }
+
+            .active, .header .container .icons :hover {
+                border-radius: auto;
+                color: white;
+            }
+
+
+        .header .container .button {
+            margin-left: auto;
+        }
+
+            .header .container .button a {
+                font-size: medium;
+                background: #229205;
+                color: white;
+                padding: 10px;
+                justify-content: right;
+                display: grid;
+                grid-template-columns: auto auto auto;
+            }
+
+        .header .container .sembol {
+            margin-left: auto;
+            display: flex;
+        }
+
+            .active, .header .container .sembol :hover {
+                border-radius: auto;
+                color: white;
+            }
+
+            .header .container .sembol a {
+                font-size: medium;
+                color: rgb(120, 177, 230);
+                background-color: #2d394b;
+                padding: 12px;
+                justify-content: right;
+                display: flex;
+            }
+
+    .header .fa-solid {
+        margin-right: 8px;
+    }
+
+.ayirici {
+    background-color: #143dc4;
+    min-height: 2vh;
+    z-index: 1000;
+    position: fixed;
+}
+
+.menu {
+    background: white;
+    width: 100%;
+    position: fixed;
+    justify-content: space-between;
+    display: flex;
+    flex-direction:row;
+    line-height: 7vh;
+    z-index: 1000;
+    /*position:fixed  ---> sabitlemek icin kullanilir
+   */
+}
+
+
+
+.mobil {
+    line-height: 40px;
+    float: right;
+    color: #025bff;
+    text-align: left;
+    box-sizing: border-box;
+    padding-left: 46%;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1000;
+    position: absolute;
+    display: none;
+}
+
+#mobil {
+    display: none; /* Menudeki checkbox gorunurlugunu kaldirma  */
+}
+
+
+/* Bilgisayar icin yapilan ilk tasarim kodlari*/
+.menubaslik {
+    color: #003caa;
+    text-decoration: none;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-family: 'Coda', display;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 60px;
+    display: flex;
+}
+
+.menuler {
+    margin-top: 2%;
+    display: flex;
+    font-size: 18px;
+    position: relative;
+    transition: .3s;
+    cursor: pointer;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.Security {
+    color: #000000;
+    font-size: 15px;
+}
+
+    .Security:hover {
+        color: #0049d1;
+    }
+
+.SHome {
+    color: #000000;
+    font-size: 15px;
+}
+
+    .SHome:hover {
+        color: #0049d1;
+    }
+
+.Singlep {
+    color: #000000;
+    font-size: 15px;
+}
+
+    .Singlep:hover {
+        color: #0049d1;
+    }
+
+.homealtinda {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+}
+
+.Home:hover .homealtinda {
+    display: block;
+    background: white;
+    text-align: center;
+}
+
+.storealti {
+    display: none; /* menude gozukmez*/
+    position: absolute;
+    min-width: 200px;
+}
+
+.Store:hover .storealti {
+    display: block;
+    text-align: center;
+    background-color: white;
+}
+
+.Home {
+    padding-right: 16px;
+}
+
+    .Home:hover {
+        color: #0049d1;
+        
+    }
+
+.Services {
+    padding-right: 16px;
+}
+
+    .Services:Hover {
+        color: #0049d1;
+    }
+
+.Store {
+    padding-right: 16px;
+}
+
+    .Store:Hover {
+        color: #0049d1;
+    }
+
+.Support {
+    padding-right: 16px;
+}
+
+    .Support:Hover {
+        color: #0049d1;
+    }
+
+.Partners {
+    padding-right: 16px;
+}
+
+    .Partners:Hover {
+        color: #0049d1;
+    }
+
+.About {
+    padding-right: 16px;
+}
+
+    .About:Hover {
+        color: #0049d1;
+    }
+
+.Blog {
+    padding-right: 16px;
+    text-decoration: none;
+}
+
+    .Blog:Hover {
+        color: #0049d1;
+        text-decoration:none;
+    }
+
+.Concact {
+    padding-right: 16px;
+}
+
+    .Concact:Hover {
+        color: #0049d1;
+    }
+
+#container {
+    width: 100%;
+    margin: auto;
+    height: auto;
+}
+
+#homeResim {
+    width: 80%;
+    height: auto;
+}
+
+.footer {
+    background: #000000;
+  /*  margin-top: 7%;*/
+    left: 0;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 111px 0;
+}
+
+.footericons {
+    display: flex;
+}
+
+.footerimg {
+    margin-right: 18px;
+}
+
+.footersol {
+    margin-right: 16%;
+}
+
+.footerorta {
+    display: flex;
+    margin-right: 17%;
+}
+
+.footerson {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    padding: 0 9% 0 0;
+    color: #02d6fc;
+    justify-content: space-around;
+}
+
+.ftext1-1 {
+    font-weight: 300;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    color: #cccccc;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+}
+
+.ftext1-2 {
+    font-weight: 300;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    color: #cccccc;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    text-align: end;
+}
+
+    .ftext1-2:hover {
+        color: #02d6fc;
+    }
+
+.ftext2 {
+    font-size: 30px;
+    color: white;
+}
+
+.logo-hover:hover {
+    background-color: #02d6fc !important; /*important ozelligi sayesinde style deki padding in one cikmasi engellendi*/
+    border-color: #02d6fc;
+    color: white;
+}
+
+.logo-hover {
+    padding: 24px;
+    border-radius: 60px;
+    background-color: white;
+    margin-right: 10px;
+}

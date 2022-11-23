@@ -1,0 +1,206 @@
+﻿.body{
+    margin:0;
+}
+.servicessection1 {
+    width: 100%;
+    height:24rem;
+    padding: 6%;
+    background-image: url(/img/mt.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:3% 0 0 0;
+
+}
+
+.serv_baslik {
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Coda', display;
+    color: #171e43;
+    font-size: 60px;
+    line-height: 1.1;
+    letter-spacing: 1px;
+}
+
+.serv_text {
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    color: #171e43;
+    font-size: 24px;
+    line-height: 1.2;
+    width: 56%;
+}
+/*************/
+.servicessection2 {
+    margin: 6%;
+}
+
+.servsec2baslik {
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Coda', display;
+    color: #171e43;
+    font-size: 50px;margin-left:1%;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+
+.servsec2text {
+    font-weight: 300;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    color: #171e43;
+    font-size: 18px;
+    padding-top: 2%;
+    line-height: 1.4;
+    margin-left:1%;
+    letter-spacing: 0px;
+}
+/*************/
+
+.servsec2kart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.serv2kart_1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap; /* Kartların istenilen şekilde sığması,dizilmesi icin,3 kart yan yana 3 kart alt alta */
+}
+
+.kart_a {
+    /*font-weight: 400;
+    font-style: normal;
+    font-family: 'Coda', display;
+    color: #171e43;
+    font-size: 20px;
+    line-height: 1.5;
+    border-style: solid;
+    width: 31%;*/
+    /* flex: 0 0 25%; */
+    padding: 3%;
+    border: 1px solid #e6e6e6;
+    margin: 0.8%;
+    border-radius: 4%;
+    padding: 4% 3%;
+    font-family: 'Coda', display;
+    color: #171e43;
+    font-size: 20px;
+    border-style: solid;
+    width: 32%;
+    display: flex;
+    flex: 0 0 31%;
+    flex-direction: row;
+    border-style: solid;
+    border-color: #e6e6e6;
+    border-left-width: 1px;
+    border-right-width: 3px;
+    border-top-width: 1px;
+    border-bottom-width: 3px;
+    border-radius: 2%;
+    border-color: #e6e6e6;
+    margin: 0.8%;
+    align-items:center;
+}
+
+.servccheck {
+    padding: 4%;
+    color: #02d6fc;
+    font-size: 26px;
+}
+/********************/
+
+
+.servicessection3 {
+    width: 100%;
+    display: flex;
+    margin: 0 0 7% 0;
+    justify-content: space-around;
+}
+
+.ser_sec3kart1 {
+    width: 44%;
+    align-items: center;
+    background-image: url(/img/standartkart.jpg);
+    height: 68vh;
+    background-size: cover; /* resmi verilen div  boyutuna sigdirma*/
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: transparent;
+    margin-left: 4%;
+}
+
+    .ser_sec3kart1:hover {
+        background-color: #3b18ed;
+        background-image: none;
+    }
+
+.ser_sec3kart2 {
+    width: 44%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-size: cover; /* resmi verilen div  boyutuna sigdirma*/
+    margin-right: 4%;
+    justify-content: space-around;
+    background-image: url(/img/premium.jpg);
+    height: 68vh;
+    background-repeat: no-repeat;
+}
+
+    .ser_sec3kart2:hover {
+        background-color: #464968;
+        background-image: none;
+    }
+
+.sec3_kart_text {
+    font-style: normal;
+    font-family: 'Coda', display;
+    color: #ffffff;
+}
+
+.standart {
+    font-size: 36px;
+}
+
+.premium {
+    font-size: 36px;
+}
+
+.aylikdolar {
+    font-size: 22px;
+    font-style: italic;
+    font-family: 'Lora', serif;
+}
+
+.serc3kartaciklama {
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    width: 54%;
+}
+
+.order_now {
+    padding: 3.5%;
+    border-radius: 4%;
+    width: 26%;
+    cursor: pointer;
+    font-family: 'Coda', display;
+    font-weight: 400;
+    font-style: normal;
+    color: #1d0e64;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+    .order_now:hover {
+        background-color: black;
+        color: #ffffff;
+    }

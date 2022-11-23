@@ -1,0 +1,1868 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Roboto:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coda&family=Lora:ital,wght@1,500&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+img {
+    border: 0;
+}
+
+:focus {
+    outline: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+.kart2 .bannerimage img {
+    width: 100%;
+}
+
+.kart2 {
+    width: 50%;
+}
+
+
+
+
+/*#mobil {
+    display: none;*/ /* Menudeki checkbox gorunurlugunu kaldirma  */
+/*}*/
+/*Mobil responive*/
+
+@media (max-width:510px) {
+    input[type=submit] {
+        width: 28% !important;
+        font-size: 14px;
+        margin-bottom: 6%;
+        height: 35px !important;
+    }
+
+    .mobil {
+        display: none;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+        .header .container {
+            width: 100%;
+        }
+
+            .header .container .baslik {
+                width: 36%;
+            }
+
+    .fa-cart-shopping {
+        font-size: 7px;
+    }
+
+
+    .fa-mobile {
+        font-size: 12px;
+    }
+
+    .fa-tablet {
+        font-size: 12px;
+    }
+
+    .fa-display {
+        font-size: 12px;
+    }
+
+    .fa-angles-up {
+        font-size: 12px;
+    }
+
+    .fa-cart-shopping {
+        font-size: 12px;
+    }
+
+    .header .container .icons {
+        width: 52%;
+    }
+
+    .menu {
+        position: fixed;
+        margin: 0;
+        padding: 0;
+        width: 100% !important;
+        transition: 0.7s;
+    }
+
+    .header .container .baslik a {
+        font-size: 9px;
+    }
+
+    .menuler {
+        width: 100% !important;
+    }
+
+    .kart2 .bannerimage img {
+        width: 250px !important;
+        margin-top: 50px !important;
+    }
+
+    .banner0 {
+        width: 100% !important;
+        height: 85% !important;
+    }
+
+        .banner0 .container {
+            width: 100%;
+        }
+
+        .banner0 #Resim {
+            max-width: 100%;
+            height: auto;
+        }
+
+    #btn {
+        margin-top: 82% !important;
+        margin-right: 43% !important;
+    }
+
+    .centered1 {
+        margin-top: 43% !important;
+    }
+
+    .centered2 {
+        padding-top: 61% !important;
+        padding-left: 16% !important;
+        font-size: 25px !important;
+    }
+
+    .centered3 {
+        font-size: 25px !important;
+        padding-left: 6% !important;
+        padding-top: 65% !important;
+    }
+
+
+    .banner1 .container .kart2 .bannerimage {
+        width: 260px !important;
+        padding-left: 4px !important;
+    }
+
+    #btnlearn {
+        width: 36% !important;
+        margin-top: 90% !important;
+        margin-left: 6%;
+    }
+
+    .banner1 {
+        margin-top: 552px !important;
+        width: 100%;
+    }
+
+        .banner1 .container {
+            display: flex;
+            flex-direction: column;
+            width: 100% !important;
+        }
+
+            .banner1 .container .kart1 {
+                width: 100% !important;
+            }
+
+                .banner1 .container .kart1 .baslik1 {
+                    width: 100% !important;
+                }
+
+                .banner1 .container .kart1 .picture1 {
+                    line-height: 182px !important;
+                    margin-right: 30px;
+                }
+
+                .banner1 .container .kart1 .baslik1 h1 {
+                    width: 116% !important;
+                    font-size: 16px !important;
+                }
+
+                .banner1 .container .kart1 .baslik2 h2 {
+                    font-size: 27px !important;
+                }
+
+                .banner1 .container .kart1 .aciklama1 {
+                    font-size: 18px;
+                    font-style: normal;
+                }
+
+        .banner1 .kart1-3 {
+            padding: 5%;
+        }
+
+            .banner1 .kart1-3 button {
+                width: 42%;
+            }
+
+        .banner1 .aciklama1 {
+            font-size: 21px;
+            font-style: normal;
+        }
+
+        .banner1 .container .kart1 .kart1-2 .aciklamalar {
+            margin-left: 18% !important;
+        }
+
+            .banner1 .container .kart1 .kart1-2 .aciklamalar .kbaslik3 {
+                font-size: 21px !important;
+            }
+
+            .banner1 .container .kart1 .kart1-2 .aciklamalar .kbaslik2 {
+                font-size: 21px !important;
+            }
+
+    .font-size-21 {
+        font-size: 21px;
+    }
+
+    .banner3 .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .banner3 .container .text .aciklama {
+            width: 97%;
+        }
+
+    #bn3btn {
+        margin-left: 33%;
+        font-size: 11px;
+        width: 45% !important;
+        padding: 3% 0 3% 0;
+    }
+
+    #ticketbtn {
+        width: 35% !important;
+        font-size: 10px !important;
+    }
+
+    .banner4 {
+        width: 100%;
+    }
+
+        .banner4 .ticket2 {
+            font-size: 14px !important;
+        }
+
+    .banner2 {
+        width: 100%;
+    }
+
+        .banner2 .container {
+            padding-left: 5px;
+        }
+
+        .banner2 .bn2text {
+            margin-left: 19px;
+            text-align: center;
+        }
+
+    .banner3 .container .text .baslik {
+        font-size: 25px !important;
+    }
+
+    .banner3 .container .text .textt {
+        font-size: 16px !important;
+    }
+
+    .banner3 .gorsel1 {
+        width: 104% !important;
+        padding-top: 15% !important;
+    }
+
+    .card-a {
+        /* width: 82%;*/
+        width: 25rem !important;
+    }
+
+    .banner3 .container .text {
+        padding-top: 2%;
+        width: 100% !important;
+    }
+
+    .gorsel {
+        width: 90% !important;
+    }
+
+    .banner2 .container .ust {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner2 .container .alt {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .yorum {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .yorum .card {
+            display: flex;
+            flex-direction: column;
+            padding-right: 5%;
+        }
+
+        .yorum .etiket {
+            width: 100% !important;
+            margin: 0;
+            text-align: center;
+        }
+
+        .yorum .etiketbaslik {
+            font-size: 16px !important;
+            padding-top: 4%;
+            width: 100%;
+        }
+
+    .card-text1 {
+        font-size: 13px !important;
+    }
+
+    .card-text2 {
+        font-size: 13px !important;
+    }
+
+    .sahibi {
+        font-size: 15px !important;
+    }
+
+    .banner4 #bn4p6 {
+        width: 100%;
+    }
+
+    .banner4 .ticket1 {
+        font-size: 15px !important;
+    }
+
+    .bn4text {
+        justify-items: center;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .banner5 {
+        flex-direction: column;
+    }
+
+    #bn5resimid {
+        margin-top: 10% !important;
+        width: 43%;
+        margin-left: 30% !important;
+        margin-bottom: 16px;
+    }
+
+    .bn5text {
+        margin-left: 5% !important;
+        margin-top: 5px !important;
+    }
+
+    .bn5baslik1 {
+        width: 99% !important;
+    }
+
+    .bn5baslik2 {
+        font-size: 27px !important;
+        padding-top: 3%;
+    }
+
+    .bn5aciklama1 {
+        font-size: 15px !important;
+    }
+
+    .bn5aciklama2 {
+        font-size: 13px !important;
+    }
+
+    #bn5btn {
+        width: 100%;
+        margin: 15px 0 16px 110px !important;
+    }
+
+    .banner6 input[type=text], select, textarea {
+        width: 85%;
+        padding: 3px;
+    }
+
+    .banner6 {
+        display: flex;
+        flex-direction: column;
+        /*  align-items: center;*/
+    }
+
+    .sag {
+        width: 100%;
+    }
+
+    .solaciklama {
+        width: 98%;
+        padding-top: 5px !important;
+    }
+
+    .solbaslik1 {
+        font-size: 25px !important;
+        line-height: 32px !important;
+    }
+
+    .callnow {
+        font-size: 13px !important;
+        padding-top: 8px !important;
+    }
+
+    input#yname {
+        font-size: 13px !important;
+    }
+
+    input#eml {
+        font-size: 13px !important;
+    }
+
+    input#msg {
+        font-size: 13px !important;
+    }
+
+    .phonemenu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu .menuler {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        width: 100%;
+        display: none;
+        padding-top: 5%;
+        background-color: white;
+        flex-direction: column;
+    }
+
+
+    #mobil:checked ~ .menuler {
+        padding-top: 14%;
+        padding-left: 46%;
+        display: block; /*tiklandiginda menudekikeri goster*/
+    }
+
+    #sagcamera {
+        width: 168% !important;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footericons {
+        display: flex;
+        margin: 40px 0 0 44px;
+        cursor: pointer;
+    }
+
+    .footer .footerorta {
+        /* margin-right:30px;*/
+        padding-left: 34%;
+        margin-bottom: 5px;
+    }
+
+    .footer .fsoltext {
+        padding-left: 100px;
+        padding-bottom: 25px;
+    }
+
+    .footerson {
+        padding: 20px 0 0 40% !important;
+    }
+}
+
+
+
+@media(max-width:510px) {
+    .mobil {
+        display: block; /*767px den sonra bar gorunumu kaldirilacak*/
+    }
+}
+
+/*Tablet icin responsive kodlari*/
+
+@media(max-width:1039px) {
+
+
+
+
+    .header {
+        width: 100%;
+    }
+
+    header .fa-solid {
+        margin-right: 1px;
+    }
+
+    .banner0 {
+        width: 100%;
+    }
+
+    .menu {
+        width: 100% !important;
+        padding: 0;
+    }
+
+    .fa-cart-shopping {
+        font-size: 12px;
+    }
+
+    .mbaslik {
+        font-size: 15px;
+    }
+
+    .menubaslik {
+        display: flex;
+        margin-left: 27px !important;
+    }
+
+    .menubaslikicon img {
+        width: 32px;
+    }
+
+    .menuler {
+        padding-left: 3% !important;
+        font-size: 10px !important;
+        width: 100%;
+    }
+    /*yeni ekledmm*/
+    .Home {
+        padding-right: 2px !important;
+    }
+
+    .Services {
+        padding-right: 2px !important;
+    }
+
+    .Store {
+        padding-right: 2px !important;
+    }
+
+    .Support {
+        padding-right: 2px !important;
+    }
+
+    .Partners {
+        padding-right: 2px !important;
+    }
+
+    .About {
+        padding-right: 2px !important;
+    }
+
+    .Blog {
+        padding-right: 2px !important;
+    }
+
+    .Concact {
+        padding-right: 2px !important;
+    }
+
+    .banner1 {
+        width: 100%;
+        padding-left: 26px !important;
+    }
+
+        .banner1 .container .kart1 .baslik1 h1 {
+            font-size: 13px !important;
+        }
+
+        .banner1 .container .kart1 .baslik2 h2 {
+            font-size: 27px !important;
+        }
+
+    .font-size-21 {
+        font-size: 18px !important;
+        padding-left: 8px;
+    }
+
+    .cihazacik {
+        padding-left: 15px;
+    }
+
+    .banner1 .container .kart1 .kart1-3 button {
+        font-size: 11px !important;
+        min-width: 8px !important;
+        margin-left: 91px;
+        padding: 6px 15px !important;
+    }
+
+    .centered1 {
+        margin-left: 9%;
+    }
+    /*
+        #btn{
+            margin-top: 53%!important;
+            margin-left: 4%!important;
+        }*/
+    #btnlearn {
+        margin-top: 60%;
+    }
+
+    .baslik1 h1 {
+        width: 478px;
+    }
+
+    .kart1-3 button {
+        margin-top: 6%;
+    }
+
+    .kart2 .bannerimage img {
+        width: 100;
+        margin-top: 298px;
+    }
+
+    .banner2 {
+        width: 100% !important;
+    }
+
+        .banner2 .container.ust {
+            justify-content: space-between !important;
+        }
+
+    .bn2text {
+        font-size: 25px !important;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .tumicon img {
+        width: 43px;
+    }
+
+    .aciklama {
+        font-size: 16px;
+    }
+
+    .card-a {
+        /* width: 20%; */
+        width: 7rem;
+        margin: 0 5px;
+    }
+
+    .picture1 img {
+        width: 50px;
+    }
+
+    .banner3 {
+        width: 100% !important;
+    }
+
+        .banner3 .container {
+            width: 100% !important;
+        }
+
+            .banner3 .container .text {
+                padding-top: 1% !important;
+                width: 50%;
+            }
+
+                .banner3 .container .text .baslik {
+                    font-size: 22px !important;
+                }
+
+                .banner3 .container .text .textt {
+                    font-size: 14px !important;
+                }
+
+    .gorsel {
+        width: 50%;
+    }
+
+    .gorsel1 {
+        width: 100% !important;
+        padding-top: 15% !important;
+    }
+
+    #bn3btn {
+        line-height: 46px !important;
+        width: 36%;
+    }
+
+    .yorumcard {
+        display: flex;
+        width: 96%;
+        margin-top: 9%;
+    }
+
+    .banner1 .container .kart1 {
+        width: 55%;
+    }
+
+    .banner4 {
+        /*width: 27%;*/
+        width: 100%;
+    }
+
+    #bn4p6 {
+        width: 100%;
+    }
+
+    .bn4text {
+        width: 50%;
+    }
+
+    #ticketbtn {
+        width: 20%;
+        height: 34px !important;
+        font-size: 10px !important;
+        margin-left: 12% !important;
+    }
+
+    .etiket {
+        margin-top: 4% !important;
+        width: 33% !important;
+        text-align: center;
+        font-size: 14px !important;
+    }
+
+    .etiketbaslik {
+        font-size: 26px !important;
+    }
+
+    .banner4 .ticket1 {
+        font-size: 25px;
+    }
+
+    .banner4 .ticket2 {
+        font-size: 20px;
+    }
+
+    .card-b1 {
+        font-size: 12px !important;
+    }
+
+    .yorum {
+        width: 100% !important;
+    }
+
+    .banner5 {
+        width: 100% !important;
+        display: flex;
+    }
+
+        .banner5 .bn5text {
+            margin-top: -38%;
+            line-height: 25px !important;
+            margin-left: 41%;
+        }
+
+    .bn5baslik1 {
+        width: 56%;
+        line-height: 1.5 !important;
+        font-size: 11px !important;
+    }
+
+    .bn5baslik2 {
+        padding-top: 2% !important;
+        font-size: 24px !important;
+    }
+
+    .bn5aciklama1 {
+        font-size: 14px !important;
+    }
+
+    .bn5aciklama2 {
+        font-size: 14px !important;
+    }
+
+    #bn5resimid {
+        margin-top: 5% !important;
+        width: 23% !important;
+        margin-left: 5%;
+    }
+
+    #bn5btn {
+        height: 40px !important;
+        font-size: 11px;
+    }
+
+    .banner6 {
+        width: 100% !important;
+    }
+
+    .callnow {
+        padding: 15px 0 16px 0;
+        font-size: 12px !important;
+    }
+
+    input#yname {
+        font-size: 12px !important;
+    }
+
+    input#eml {
+        font-size: 12px !important;
+    }
+
+    input#msg {
+        font-size: 12px !important;
+    }
+
+    .banner6 .sol {
+        width: 60%;
+    }
+
+    .solbaslik1 {
+        font-size: 31px !important;
+        line-height: 41px !important;
+    }
+
+    .solaciklama {
+        font-size: 13px !important;
+    }
+
+    .banner6 .sag {
+        width: 40%;
+    }
+
+    #sagcamera {
+        width: 100%;
+    }
+
+    input[type=submit] {
+        height: 43px !important;
+        font-size: 12px;
+        width: 34% !important;
+        margin-left: 12% !important;
+    }
+
+    .footer {
+        width: 100% !important;
+        padding: 60px 0 !important;
+        margin-top: 19% !important;
+    }
+
+    .footersol {
+        margin-right: 6% !important;
+        width: 100%;
+    }
+
+    .ftext1-1 {
+        padding-left: 5%;
+    }
+
+    .ftext2 {
+        font-size: 17px !important;
+    }
+
+    .footericons {
+        margin: 0px 161px 0 0;
+        font-size: 10px;
+    }
+
+    .footerorta {
+        width: 100%;
+    }
+
+    .footerson {
+        width: 100%;
+        margin-left: 24%;
+    }
+}
+
+.gorsel {
+    width: 100%;
+}
+
+
+.centered1 {
+    position: absolute;
+    color: #ffffff;
+    font-style: normal;
+    font-family: 'Roboto',sans-serif;
+    font-size: 20px;
+    background-color: rgba(2, 91, 255, 0.55);
+    background-position: left top;
+    line-height: 1.8;
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin-top: 25%;
+}
+
+.ceneteredtext1 { /* centered ortalamk icin dive alip ortalama */
+    /*    justify-items: center;
+*/ position: absolute;
+    width: 16%;
+    margin: 10% 0 0 93%;
+    /*    text-align: center;
+*/ width: 100%;
+}
+
+.ilktext {
+    position: absolute;
+    display: contents;
+}
+
+.centered2 {
+    justify-content: center;
+    padding-top: 30%;
+    position: absolute;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Coda', display;
+    color: #ffffff;
+    font-size: 71px;
+    line-height: 1.1;
+    width: 45%;
+    letter-spacing: 1px;
+}
+
+.centered3 {
+    justify-content: center;
+    padding-top: 29%;
+    position: absolute;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Coda', display;
+    color: #ffffff;
+    font-size: 71px;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    width: 52%;
+}
+
+
+#btn {
+    font-family: 'Coda', display;
+    font-weight: 400;
+    font-style: normal;
+    color: #171e43;
+    background-color: #02d6fc;
+    border-color: #02d6fc;
+    font-size: 15px;
+    min-width: 120px;
+    padding: 6px;
+    line-height: 21px;
+    border-radius: 5px;
+    width: 13%;
+    margin-top: 36%;
+    margin-left: 5%;
+}
+
+    #btn:hover {
+        background-color: #003caa;
+        color: white;
+    }
+
+#btnlearn {
+    font-family: 'Coda', display;
+    font-weight: 400;
+    font-style: normal;
+    color: #171e43;
+    background-color: #02d6fc;
+    border-color: #02d6fc;
+    position: absolute;
+    font-size: 15px;
+    padding: 6px;
+    line-height: 21px;
+    border-radius: 5px;
+    width: 13%;
+    margin-top: 35%;
+}
+
+    #btnlearn:hover {
+        background-color: #003caa;
+        color: white;
+    }
+
+#Resim {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper {
+    width: 98%;
+    height: 100%;
+    position: absolute;
+}
+
+.swiper-wrapper {
+    position: absolute;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+    }
+
+.banner0 {
+    min-height: 80vh;
+    float: none;
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    height: 909px;
+    padding: 0;
+    margin: 0;
+}
+
+    .banner0 .container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+.banner1 {
+    min-height: 80vh;
+    background: white;
+    padding-right: 80px;
+    padding-left: 90px;
+    width: 100%;
+    margin-top: 950px;
+}
+
+    .banner1 .container {
+        width: 100%;
+        display: flex;
+    }
+
+        .banner1 .container .kart1 {
+            line-height: 60px;
+            margin-top: 100px;
+            width: 50%;
+        }
+
+            .banner1 .container .kart1 .aciklama1 {
+                line-height: 25px;
+            }
+
+            .banner1 .container .kart1 .baslik1 {
+                line-height: 50px; /*ek*/
+                width: 40%;
+                padding-bottom: 20px;
+            }
+
+                .banner1 .container .kart1 .baslik1 h1 {
+                    font-size: 20px;
+                    color: white;
+                    background-color: #025bff;
+                    /*width:518px;*/
+                    width: 180%;
+                    text-align: center;
+                }
+
+            .banner1 .container .kart1 .baslik2 h2 {
+                color: #171e43;
+                font-size: 50px;
+                font-weight: 400;
+                font-style: normal;
+                font-family: 'Coda', display;
+                color: #171e43;
+                font-size: 50px;
+                line-height: 1;
+                letter-spacing: 1px;
+            }
+
+    .banner1 .aciklama1 {
+        font-weight: 300;
+        font-style: normal;
+        font-family: 'Roboto', sans-serif;
+        color: #171e43;
+        font-size: 18px;
+        line-height: 1.4;
+        letter-spacing: 0px;
+        margin-top: 15px;
+    }
+
+    .banner1 .container .kart1 .picture1 {
+        max-width: 50px;
+        height: auto;
+        line-height: 100px; /* Kendi aralarinda mesafeyi aciyor(alt-ust)*/
+    }
+
+    .banner1 .container .kart2 .bannerimage {
+        width: 100%;
+    }
+
+    .banner1 .container .kart1 .kart1-2 {
+        line-height: 40px;
+        display: flex;
+        margin-top: 15px;
+    }
+
+        .banner1 .container .kart1 .kart1-2 .aciklamalar {
+            margin-left: 8%;
+            line-height: 50px;
+        }
+
+            .banner1 .container .kart1 .kart1-2 .aciklamalar .kbaslik1 {
+                display: flex;
+                font-size: 24px;
+                font-weight: 400;
+                font-style: normal;
+                text-decoration: none;
+                color: #1d0e64;
+            }
+
+            .banner1 .container .kart1 .kart1-2 .aciklamalar .sensoraciklama {
+                font-weight: 300;
+                font-style: normal;
+                font-family: 'Roboto', sans-serif;
+                color: #171e43;
+                font-size: 20px;
+                line-height: 1.2;
+                letter-spacing: 0px;
+            }
+
+            .banner1 .container .kart1 .kart1-2 .aciklamalar .kbaslik2 {
+                display: flex;
+                font-size: 24px;
+                font-weight: 400;
+                font-style: normal;
+                text-decoration: none;
+                color: #1d0e64;
+            }
+
+            .banner1 .container .kart1 .kart1-2 .aciklamalar .alertsaciklama {
+                font-weight: 300;
+                font-style: normal;
+                font-family: 'Roboto', sans-serif;
+                color: #171e43;
+                font-size: 20px;
+                line-height: 1.2;
+                letter-spacing: 0px;
+            }
+
+            .banner1 .container .kart1 .kart1-2 .aciklamalar .kbaslik3 {
+                display: flex;
+                font-size: 24px;
+                font-weight: 400;
+                font-style: normal;
+                text-decoration: none;
+                color: #1d0e64;
+            }
+
+            .banner1 .container .kart1 .kart1-2 .aciklamalar .controlaciklama {
+                font-weight: 300;
+                font-style: normal;
+                font-family: 'Roboto', sans-serif;
+                color: #171e43;
+                font-size: 20px;
+                line-height: 1.2;
+                letter-spacing: 0px;
+            }
+
+    .banner1 .container .kart1 .kart1-3 {
+        margin: 7% 0 0 0;
+    }
+
+        .banner1 .container .kart1 .kart1-3 button {
+            font-family: 'Coda', display;
+            font-weight: 400;
+            font-style: normal;
+            color: #171e43;
+            background-color: #02d6fc;
+            border-color: transparent;
+            border-radius: 4px;
+            padding: 17px 15px;
+            min-width: 230px;
+            text-align: center;
+            line-height: 21px;
+            border: 0px solid;
+            font-size: 16px;
+        }
+
+            .banner1 .container .kart1 .kart1-3 button:hover {
+                color: white;
+                background-color: #0049d1;
+            }
+
+.banner2 {
+    min-height: 60vh;
+    justify-content: space-between;
+    margin-top: 8%;
+    width: 100%;
+    justify-content: center;
+    background-image: url('../img/r8.jpg');
+    padding-top: 8%;
+    padding-bottom: 6%;
+}
+
+.bn2text {
+    color: white;
+    font-size: 45px;
+    margin-left: 35%;
+}
+
+.banner2 .container {
+    justify-content: space-between;
+}
+
+.banner2 .ust {
+    display: flex;
+    line-height: 45px;
+    justify-content: space-around;
+}
+
+.a1 {
+    padding-top: 10%;
+}
+
+.b1 {
+    padding-top: 10%;
+}
+
+.c1 {
+    padding-top: 10%;
+}
+
+.d1 {
+    padding-top: 10%;
+}
+
+.e1 {
+    padding-top: 10%;
+}
+
+.f1 {
+    padding-top: 10%;
+}
+
+.g1 {
+    padding-top: 10%;
+}
+
+.h1 {
+    padding-top: 10%;
+}
+
+.banner2 .alt {
+    display: flex;
+    line-height: 45px;
+    justify-content: space-around;
+}
+
+.card-a {
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 2%;
+    width: 18rem;
+}
+
+.banner3 {
+    background-color: white;
+    min-height: 80vh;
+    box-sizing: border-box;
+    margin-top: 5%;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.gorsel1 {
+    padding: 5%;
+    width: 100%;
+}
+
+.banner3 .container {
+    display: flex;
+}
+
+    .banner3 .container .text {
+        min-height: 50vh;
+        padding: 50px 0;
+        line-height: 30px;
+        padding-right: 10px;
+        padding-left: 35px;
+    }
+
+        .banner3 .container .text .aciklama {
+            background-color: #025bff;
+            margin-top: 15px;
+            text-align: center;
+            font-weight: 300;
+            font-style: normal;
+            font-family: 'Roboto', sans-serif;
+            color: #ffffff;
+            font-size: 20px;
+            width: 28%;
+            line-height: 1.8;
+            letter-spacing: 2px;
+        }
+
+        .banner3 .container .text .baslik {
+            line-height: 25px;
+            color: #131444;
+            font-size: 45px;
+            margin-top: 25px;
+            line-height: 44px;
+            width: 0;
+        }
+
+        .banner3 .container .text .textt {
+            line-height: 20px;
+            font-size: 20px;
+            margin-top: 25px;
+            color: #434f53;
+        }
+
+#bn3btn {
+    line-height: 25px;
+    background-color: #02d6fc;
+    border-radius: 3px;
+    color: #1335a5;
+    width: 22%;
+    cursor: pointer;
+    padding: 2%;
+    border-color: #02d6fc;
+    margin-top: 45px;
+}
+
+    #bn3btn:hover {
+        color: white;
+        background-color: #0049d1;
+    }
+
+.banner4 {
+    background-color: white;
+    display: grid;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+}
+
+#bn4p6 {
+    width: 100%;
+}
+
+.banner4 .bn4p6 {
+    width: 100%;
+}
+
+.banner4 .ticket1 {
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Coda', display;
+    color: #ffffff;
+    font-size: 45px;
+    padding-left: 2%;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+
+.banner4 .ticket2 {
+    text-align: center;
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'Lora', serif;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 5.2;
+    letter-spacing: 0px;
+}
+
+#ticketbtn {
+    margin-top: 6%;
+    margin-left: 12%;
+    font-family: 'Coda', display;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    width: 27%;
+    cursor: pointer;
+    height: 40px;
+    border-radius: 4px;
+}
+
+    #ticketbtn:Hover {
+        color: white;
+        background-color: #02d6fc;
+    }
+
+.yorum {
+    background-color: white;
+    min-height: 80vh;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 2% 0 0 0;
+}
+
+.yorumcard {
+    display: flex;
+    margin-top: 95px;
+    margin-right:4%;
+}
+
+.card-text1 {
+    margin-bottom: 4%;
+    padding-left: 6%;
+}
+
+.card-text {
+    text-align: center;
+    padding-left: 6%;
+    padding-top: 5%;
+}
+
+.card-text2 {
+    padding-left: 6%;
+    margin-bottom: 4%;
+}
+
+.etiket {
+    margin-left: 45%;
+    font-weight: 300;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    text-align:center;
+    line-height: 1.8;
+    letter-spacing: 2px;
+    width: 12%;
+    background-color: #1a66f5;
+}
+
+.etiketbaslik {
+    padding-left: 25%;
+    padding-top: 1%;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Coda', display;
+    color: #171e43;
+    font-size: 50px;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+
+.yorum .card {
+    position: relative;
+    display: flex;
+    bottom: 23px;
+    margin-top: 8%;
+}
+
+.cardilk {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardilkicon {
+    text-align: left;
+}
+
+.card-b1 {
+    background-color: #e3eeff;
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'Lora', serif;
+    color: #1d0e64;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    padding: 3%;
+    margin-top: -4%;
+    margin-left: 4%;
+    border-radius: 7%;
+    display: flex;
+    flex-direction: column;
+}
+
+.homecardfa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-size: 59px;
+    color: white;
+}
+
+.card-b2 {
+    border-radius: 7%;
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'Lora', serif;
+    color: #1d0e64;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    background-color: #e3eeff;
+    padding: 3%;
+    margin-left: 5%;
+    margin-top: -4%;
+    margin-right: 12%;
+}
+
+.card-b1 .sahibi {
+    color: #1c3791;
+    margin-left: 4%;
+}
+
+.banner5 {
+    background-image: url('../img/bg.jpg');
+    background-position: center;
+    display: grid;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-top: 7%;
+    margin-bottom: 2%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+#p6 {
+    width: 100%;
+}
+
+.banner5 .bn5text {
+    margin: 15% 0 0 5%;
+    line-height: 25px;
+    width: 64%;
+}
+
+.bn5resim {
+    margin: 0 0 0 13%;
+}
+
+#bn5resimid {
+    bottom: 1;
+    margin-top: 2%; /*width: 23%;*/
+    margin-left: 13%
+}
+
+.bn5baslik1 {
+    font-weight: 300;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #1d0e64;
+    width: 38%;
+    text-align: center;
+    letter-spacing: 2px;
+    /* margin-top:10%;*/
+}
+
+.bn5baslik2 {
+    margin-top:2%;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Coda', display;
+    color: #ffffff;
+    font-size: 50px;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+
+.bn5aciklama1 {
+    color: white;
+    font-size: 19px;
+    margin-top: 10px;
+}
+
+.bn5aciklama2 {
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#bn5btn {
+    background-color: #02d6fc;
+    color: #171e43;
+    border-radius: 5px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 34%;
+}
+
+    #bn5btn:hover {
+        background-color: #0c48b8;
+        color: white;
+    }
+
+.banner6 {
+    min-height: 80vh;
+    display: flex;
+    box-sizing: border-box;
+    line-height: 40px;
+    margin:5% 0;
+}
+
+    .banner6 .sol {
+        margin-left: 8%;
+    }
+
+        .banner6 .sol .form1 {
+            margin-left: -5%;
+        }
+
+.solbaslik1 { /*
+    font-size:30px;
+    margin-left: 35px;*/
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Coda', display;
+    color: #171e43;
+    font-size: 50px;
+    line-height: 70px;
+    letter-spacing: 1px;
+}
+
+.solaciklama { /*
+    font-size:17px ;
+    margin-left: 35px;
+    */
+    font-weight: 300;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    color: #171e43;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0px;
+}
+
+.callnow {
+    /*
+    color: #073ae2;
+    font-size: 18px;
+    margin-left: 35px;
+   */
+    color: #025bff;
+    text-decoration: none;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.banner6 .sol .form1 .row .col-75 {
+    color: #f2f2f2;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin-left: 35px;
+    color: #728288;
+    background-color: #f2f2f2;
+    font-style: normal;
+    font-weight: 400;
+    border-color: #f2f2f2;
+}
+
+input[type=submit] { /*
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;*/
+    font-family: 'Coda', display;
+    font-weight: 400;
+    font-style: normal;
+    color: #171e43;
+    background-color: #02d6fc;
+    border-color: transparent;
+    height: 65px;
+    width: 21%;
+    border-radius: 5px;
+    margin-left: 6%;
+}
+
+.a1 {
+    align-items: center;
+}
+
+input[type=submit]:hover {
+    background-color: #0049d1;
+    color: white;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+    }
+}
+
+/*.footer {
+    background: #000000;
+    margin-top: 7%;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 111px 0;
+}
+
+.footericons {
+    display: flex;
+}
+
+.footerimg {
+    margin-right: 18px;
+}
+
+.footersol {
+    margin-right: 16%;
+}
+
+.footerorta {
+    display: flex;
+    margin-right: 17%;
+}
+
+.footerson {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    padding: 0 9% 0 0;
+    color: #02d6fc;
+    justify-content: space-around;
+}
+
+.ftext1-1 {
+    font-weight: 300;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    color: #cccccc;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+}
+
+.ftext1-2 {
+    font-weight: 300;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    color: #cccccc;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    text-align: end;
+}
+
+    .ftext1-2:hover {
+        color: #02d6fc;
+    }
+
+.ftext2 {
+    font-size: 30px;
+    color: white;
+}
+
+.logo-hover:hover {
+    background-color: #02d6fc !important;*/ /*important ozelligi sayesinde style deki padding in one cikmasi engellendi*/
+/*border-color: #02d6fc;
+    color: white;
+}
+
+.logo-hover {
+    padding: 24px;
+    border-radius: 60px;
+    background-color: white;
+    margin-right: 10px;
+}*/
